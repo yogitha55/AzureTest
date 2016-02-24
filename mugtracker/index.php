@@ -27,7 +27,7 @@
     }
     else
     {
-        print "you nare allowed to buy spec only"
+        print "you nare allowed to buy spec only";
     }
     ?>
 </p>
