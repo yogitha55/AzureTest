@@ -1,26 +1,6 @@
 <html>
 <p>
-<?php
-echo "hello"."world";
-echo 5*6;
-$myname = "yogitha alapati";
-$myage = 56;
-echo "my name is" . $myname . "and i am" .$myage;
 
-?>
-</p>
-<p>
-<?php
-$name = "yogitha";
-if($name == "pujitha")
-{
-    print "i know you";
-}
-else {
-    print "who are you";
-}
-?>
-</p>
 <p>
     <?php
     $myage = 25;
@@ -28,12 +8,15 @@ else {
     {
         case 1:
             echo "•	buy specs if you are over 16";
+            break;
         case 2:
             echo "•	buy mugs if you are over 18";
+            break;
         case 3:
             echo "buy sausage rolls if you are over 21";
+            break;
         default:
-            echo "if you are under 16 you are not allowed to buy";
+            echo "you are allowed to buy all three of them";
     }
     ?>
 </p>
