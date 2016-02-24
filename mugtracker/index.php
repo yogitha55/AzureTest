@@ -13,7 +13,12 @@
 <p>
 
 <?php
-echo "hello";
+echo "hello"."world";
+echo 5*6;
+$myname = "yogitha alapati";
+$myage = 56;
+echo "my name is" . $myname . "and i am" .$myage;
+
 ?>
     </p>
 </body>
