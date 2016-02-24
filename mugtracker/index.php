@@ -3,7 +3,10 @@
 
 <p>
     <?php
-    $myage = 25;
+    $myage = 16;
+
+
+
     switch ($myage)
     {
         case 1:
