@@ -3,23 +3,31 @@
 
 <p>
     <?php
-    $myage = 16;
+    $myage = 21;
 
-
-
-    switch ($myage)
+    if($myage>=21)
     {
-        case 1:
-            echo "•	buy specs if you are over 16";
-            break;
-        case 2:
-            echo "•	buy mugs if you are over 18";
-            break;
-        case 3:
-            echo "buy sausage rolls if you are over 21";
-            break;
-        default:
-            echo "you are allowed to buy all three of them";
+        print "buy sasuge rolls,spes,mugs if your 21";
+    }
+    else
+    {
+        print "buy spes and mugs if you are over 16";
+    }
+    if($myage>=16)
+    {
+        print "buy spec if you are over 16";
+
+    }
+    else{
+        print "you are not allowed to buy anything";
+    }
+    if($myage>=18)
+    {
+        print "buy mugs if you are over 18";
+    }
+    else
+    {
+        print "you nare allowed to buy spec only"
     }
     ?>
 </p>
