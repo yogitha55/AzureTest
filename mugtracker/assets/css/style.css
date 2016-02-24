@@ -1,0 +1,61 @@
+h1
+{
+    color: green;
+    font-size: xx-large;
+    font-family:inherit;
+    text-align: center;
+}
+h2,h3
+{
+    color: green;
+    font-size: large;
+    font-family: inherit;
+}
+
+    nav {
+background-color:gray;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    color: darkgray;
+    display: block;
+    margin: 8px 22px 8px 22px;
+    overflow: hidden;
+    width: 90%;
+}
+
+p  {
+    color: black;
+    font-family: courier;
+    font-size: 100%;
+    font-variant-alternates: inherit;
+    text-align: start;
+
+}
+
+body{
+    background-color: darkgray;
+}
+h1{
+    background-color: darkgray;
+}
+h2{
+    background-color: darkgray;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}
