@@ -1,5 +1,5 @@
 <html>
-<p>
+<body>
 
 <p>
     <?php
