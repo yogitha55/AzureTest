@@ -31,7 +31,13 @@ fieldset
 }
 fieldset legend
 {
-	
+	padding:2px;
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+	font-size:14px;
+	font-weight:bold;
+	background:#22264b;
+	border:2px solid black;
+	color:#FFF;
 }
 .error
 {
