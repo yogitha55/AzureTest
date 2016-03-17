@@ -13,8 +13,7 @@
 </head>
 
 <body>
-< div align=center >
-	<form method="post" action="">
+	<form method="post" action="" align="centre">
 		<fieldset>
 		<legend>Registration Form</legend>
 			<table width="400"  border="0" cellpadding="10" cellspacing="10">
