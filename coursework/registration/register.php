@@ -39,6 +39,16 @@
 					</td>
 				</tr>
 				<tr>
+					<td style="font-weight: bold">
+						<div align="right">
+							<label for="phonenumber">PhoneNumber</label>
+						</div>
+					</td>
+					<td>
+						<input name="tel" type="tel" class="input" size="11" required />
+					</td>
+				</tr>
+				<tr>
 					<td height="23" style="font-weight: bold">
 							<div align="right">
 								<label for="password">Password</label>
