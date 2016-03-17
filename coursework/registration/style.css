@@ -17,7 +17,7 @@ input[type=submit]
 	font-size:18px;
 	font-weight:bold;
 	background:#003399;
-	
+	border:2px solid #dddddd;
 	color:#FFF;
 }
 fieldset
@@ -45,6 +45,7 @@ fieldset legend
 	font-size:16px;
 }
 form {
-	width: 800px;
+	align-form: centre;
+	width: 200px;
 	margin: 0 auto;
 }
