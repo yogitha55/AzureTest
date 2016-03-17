@@ -62,7 +62,7 @@
 					<td height="23"></td>
 					<td>
 						<div align="right">
-				  		<input type="submit" name="submit" value="Register!" />
+				  		<input type="submit" name="submit" value="Register" />
 						</div>
 					</td>
 				</tr>
