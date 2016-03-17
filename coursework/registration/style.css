@@ -33,9 +33,9 @@ fieldset legend
 {
 	padding:2px;
 	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
-	font-size:14px;
+	font-size:18px;
 	font-weight:bold;
-	background:#22264b;
+	background:#e62739;
 	border:2px solid black;
 	color:#FFF;
 }
