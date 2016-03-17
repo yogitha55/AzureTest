@@ -17,8 +17,8 @@ input[type=submit]
 	font-size:18px;
 	font-weight:bold;
 	background:#003399;
-	border:2px solid #dddddd;
 	
+	color:#FFF;
 }
 fieldset
 {
