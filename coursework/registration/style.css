@@ -24,8 +24,8 @@ fieldset
 {
 	width: 500px;
 	font-family: sans-serif;
-	border: 5px solid #e62739;
-	background: #FFFFFF;
+	border: 1px solid black;
+	background: #D6F5F5;
 	border-radius: 5px;
 	padding: 15px;
 }
