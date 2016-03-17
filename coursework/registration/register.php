@@ -15,11 +15,11 @@
 <body>
 	<form method="post" action="">
 		<fieldset>
-		<legend>Registration Form</legend>
+		<h1>Registration Form</h1>
 			<table width="400" border="0" cellpadding="10" cellspacing="10">
-				<!--<tr>
+				<tr>
 					<td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
-				</tr>-->
+				</tr>
 				<tr>
 					<td style="font-weight: bold">
 							<div align="right"><label for="name">Username</label></div>
