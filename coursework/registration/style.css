@@ -45,7 +45,7 @@ fieldset legend
 	font-size:16px;
 }
 form {
-	align-form: centre;
-	width: 200px;
+	alignment: center;
+	width: 700px;
 	margin: 0 auto;
 }
