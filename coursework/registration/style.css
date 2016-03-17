@@ -23,6 +23,11 @@ input[type=submit]
 fieldset
 {
 	width: 500px;
+	font-family: sans-serif;
+	border: 5px solid #1F497D;
+	background: #ddd;
+	border-radius: 5px;
+	padding: 15px;
 }
 fieldset legend
 {
