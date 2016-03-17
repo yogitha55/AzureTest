@@ -16,8 +16,8 @@ input[type=submit]
 	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
 	font-size:18px;
 	font-weight:bold;
-	background:#999;
-	border:2px solid black;
+	background:#2799e6;
+	border:2px solid #dddddd;
 	color:#FFF;
 }
 fieldset
