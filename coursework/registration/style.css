@@ -24,14 +24,14 @@ fieldset
 {
 	width: 500px;
 	font-family: sans-serif;
-	border: 5px solid #1F497D;
+	border: 5px solid #e1e8f0;
 	background: #ddd;
 	border-radius: 5px;
 	padding: 15px;
 }
 fieldset legend
 {
-	padding:1px;
+	padding:5px;
 	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
 	font-size:18px;
 	font-weight:bold;
