@@ -24,7 +24,7 @@ if(isset($_POST["submit"]))
     }
     else
     {
-        //echo $name." ".$email." ".$password;
+        echo $name." ".$email." ".$password;
         $query = mysqli_query($db, "INSERT INTO users (userid, username, email, phone, password)VALUES ('$userId','$name', '$email', '$phone' '$password')")or die(mysqli_error($db));
         if($query)
         {
