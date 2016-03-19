@@ -5,15 +5,15 @@ if(isset($_POST["submit"]))
     $name = $_POST["name"];
     $email = $_POST["email"];
     $phone = $_POST["phone"];
-    $userId = $_POST["userId"];
+    $userID = $_POST["userId"];
     $password = $_POST["password"];
 
     echo $name." ".$email." ".$password;
 
-    //$userId = mysqli_real_escape_string($db, $userId);
+    $userId = mysqli_real_escape_string($db, $userId);
     $name = mysqli_real_escape_string($db, $name);
     $email = mysqli_real_escape_string($db, $email);
-    //$phone = mysqli_real_escape_string($db, $phone);
+    $phone = mysqli_real_escape_string($db, $phone);
     $password = mysqli_real_escape_string($db, $password);
     $password = md5($password);
 
