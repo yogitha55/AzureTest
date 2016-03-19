@@ -14,7 +14,7 @@ if(isset($_POST["submit"]))
     $name = mysqli_real_escape_string($db, $name);
     $email = mysqli_real_escape_string($db, $email);
     //$phone = mysqli_real_escape_string($db, $phone);
-    $password = mysqli_real_escape_int($db, $password);
+    $password = mysqli_real_escape_string($db, $password);
     $password = md5($password);
 
 
