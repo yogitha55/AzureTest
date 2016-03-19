@@ -25,7 +25,7 @@
 						<div align="right"><label for="userId">UserId</label></div>
 					</td>
 					<td>
-						<input name="userId" type="text" class="input" size="25" required />
+						<input name="userId" type="number" class="input" size="25" required />
 					</td>
 				</tr>
 				<tr>
@@ -49,11 +49,11 @@
 				<tr>
 					<td style="font-weight: bold">
 						<div align="right">
-							<label for="phonenumber">PhoneNumber</label>
+							<label for="phone">PhoneNumber</label>
 						</div>
 					</td>
 					<td>
-						<input name="phone" type="text" class="input" size="11" required />
+						<input name="phone" type="number" class="input" size="11" required />
 					</td>
 				</tr>
 				<tr>
