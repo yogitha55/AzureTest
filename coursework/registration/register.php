@@ -22,10 +22,10 @@
 				</tr>
 				<tr>
 					<td style="font-weight: bold">
-						<div align="right"><label for="userId">UserId</label></div>
+						<div align="right"><label for="userId">UserID</label></div>
 					</td>
 					<td>
-						<input name="userId" type="number" class="input" size="25" required />
+						<input name="userID" type="number" class="input" size="25" required />
 					</td>
 				</tr>
 				<tr>
