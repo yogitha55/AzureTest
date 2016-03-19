@@ -15,7 +15,6 @@ if(isset($_POST["submit"]))
     $password = mysqli_real_escape_int($db, $password);
     $password = md5($password);
 
-
     $sql="SELECT email FROM users WHERE email='$email'";
     $result=mysqli_query($db,$sql);
     $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
