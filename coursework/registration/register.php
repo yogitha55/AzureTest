@@ -22,6 +22,14 @@
 				</tr>
 				<tr>
 					<td style="font-weight: bold">
+						<div align="right"><label for="name">UsernameId</label></div>
+					</td>
+					<td>
+						<input name="userid" type="text" class="input" size="25" required />
+					</td>
+				</tr>
+				<tr>
+					<td style="font-weight: bold">
 							<div align="right"><label for="name">Username</label></div>
 					</td>
 					<td>
