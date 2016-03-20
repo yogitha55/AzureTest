@@ -40,7 +40,7 @@
 			}
 
 
-			echo $username." ".$password;
+			echo $username." ".$count;
 
 
 				//If username and password exist in our database then create a session.
