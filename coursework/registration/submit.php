@@ -8,7 +8,7 @@ if(isset($_POST["submit"]))
     $phone = $_POST["phone"];
     $password = $_POST["password"];
 
-    echo $userid." ".$name." ".$email." ".$phone."  ".$password;
+    //echo $userid." ".$name." ".$email." ".$phone."  ".$password;
 
     $userId = mysqli_real_escape_string($db, $userId);
     $name = mysqli_real_escape_string($db, $name);
@@ -29,6 +29,7 @@ if(isset($_POST["submit"]))
     else
     {
        // echo $name." ".$email." ".$password;
+        echo $userid." ".$name." ".$email." ".$phone."  ".$password;
         $query = mysqli_query($db, "INSERT INTO users (userID, username, email, phone, password)VALUES ('$userId','$name', '$email', '$phone', '$password')")or die(mysqli_error($db));
         if($query)
         {
