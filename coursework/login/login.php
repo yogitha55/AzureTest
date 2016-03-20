@@ -14,8 +14,6 @@
 			$username=$_POST['username'];
 			$password=$_POST['password'];
 
-			echo $username." ".$password;
-
 			// To protect from MySQL injection
 			$username = stripslashes($username);
 			$password = stripslashes($password);
