@@ -35,6 +35,8 @@
 				$message = "Invalid Username or Password!";
 			} else {
 				$message = "You are successfully authenticated!";
+				$_SESSION['username'] = $username; // Initializing Session
+				header("location: home.php"); // Redirecting To Other Page
 			}
 
 
