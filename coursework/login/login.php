@@ -26,7 +26,7 @@
 			$password = str_replace(' ', '', $password);
 
 			//Check username and password from database
-			$sql="SELECT email FROM users WHERE username='$username' and password='$password'";
+			$sql="SELECT * FROM users WHERE username='$username' and password='$password'";
 			$result=mysqli_query($db,$sql);
 			//$row=mysqli_fetch_array($result,MYSQLI_ASSOC) ;
 			//$result = mysqli_query("SELECT email FROM users WHERE userName='$username' and password = '$password'");
