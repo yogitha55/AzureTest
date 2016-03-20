@@ -34,7 +34,7 @@
 			$row=mysqli_fetch_array($result,MYSQLI_ASSOC) ;
 			//$result = mysqli_query("SELECT email FROM users WHERE userName='$username' and password = '$password'");
 			//$count  = mysql_num_rows($result);
-			echo $row." ".$username." ".$password;
+			
 
 				//If username and password exist in our database then create a session.
 			//Otherwise echo error.
