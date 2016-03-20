@@ -37,13 +37,13 @@
 				//If username and password exist in our database then create a session.
 			//Otherwise echo error.
 			
-			if(mysqli_num_rows($result) == 1)
+			if(mysqli_num_rows($result) == 0)
+			{
+				$error = "Incorrect username or password.";
+			}else
 			{
 				$_SESSION['username'] = $username; // Initializing Session
 				header("location: home.php"); // Redirecting To Other Page
-			}else
-			{
-				$error = "Incorrect username or password.";
 			}
 
 		}
