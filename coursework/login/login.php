@@ -25,14 +25,16 @@
 			$username = str_replace(' ', '', $username);
 			$password = str_replace(' ', '', $password);
 
-			echo $username." ".$password;
-
 			//Check username and password from database
 			//$sql="SELECT email FROM users WHERE username='$username' and password='$password'";
 			$sql="SELECT email FROM users WHERE username='$username'";
 			$result=mysqli_query($db,$sql);
 			$row=mysqli_fetch_array($result,MYSQLI_ASSOC) ;
 
+
+			echo $username." ".$password;
+
+			
 				//If username and password exist in our database then create a session.
 			//Otherwise echo error.
 			
