@@ -27,25 +27,31 @@
 
 			//Check username and password from database
 			//$sql="SELECT email FROM users WHERE username='$username' and password='$password'";
-			$sql="SELECT email FROM users WHERE username='$username'";
-			$result=mysqli_query($db,$sql);
-			$row=mysqli_fetch_array($result,MYSQLI_ASSOC) ;
+			//$result=mysqli_query($db,$sql);
+			//$row=mysqli_fetch_array($result,MYSQLI_ASSOC) ;
+			$result = mysqli_query("SELECT email FROM users WHERE userName='$username' and password = '$password'");
+			$count  = mysql_num_rows($result);
+			if($count==0) {
+				$message = "Invalid Username or Password!";
+			} else {
+				$message = "You are successfully authenticated!";
+			}
 
 
 			echo $username." ".$password;
 
-			
+
 				//If username and password exist in our database then create a session.
 			//Otherwise echo error.
 			
-			if(mysqli_num_rows($result) == 1)
-			{
-				$_SESSION['username'] = $username; // Initializing Session
-				header("location: home.php"); // Redirecting To Other Page
-			}else
-			{
-				$error = "Incorrect username or password.";
-			}
+			//if(mysqli_num_rows($result) == 1)
+			//{
+			//	$_SESSION['username'] = $username; // Initializing Session
+			//	header("location: home.php"); // Redirecting To Other Page
+			//}else
+			//{
+			//	$error = "Incorrect username or password.";
+			//}
 
 		}
 	}
