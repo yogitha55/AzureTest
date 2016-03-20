@@ -15,7 +15,7 @@
 <br><br><br>
 <tr>
 	<td colspan="2">Bugs</td>
-	<td> <a href="http://yogitha.azurewebsites.net/coursework/bugs/bugs.php">Login Now</a> </td>
+	<td> <a href="http://yogitha.azurewebsites.net/coursework/bugs/bugs.php">Bugs Home</a> </td>
 </tr>
 <a href="logout.php" style="font-size:18px">Logout?</a>
 </body>
