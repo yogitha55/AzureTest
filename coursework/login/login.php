@@ -28,7 +28,7 @@
 			echo $username." ".$password;
 
 			//Check username and password from database
-			$sql="SELECT * FROM users WHERE username='$username' and password='$password'";
+			$sql="SELECT email FROM users WHERE username='$username' and password='$password'";
 			$result=mysqli_query($db,$sql);
 			$row=mysqli_fetch_array($result,MYSQLI_ASSOC) ;
 
