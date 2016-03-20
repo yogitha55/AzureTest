@@ -8,8 +8,6 @@ if(isset($_POST["submit"]))
     $phone = $_POST["phone"];
     $password = $_POST["password"];
 
-    echo $userid." ".$name." ".$email." ".$password;
-
     //$userid = mysqli_real_escape_string($db, $userid);
     $name = mysqli_real_escape_string($db, $name);
     $email = mysqli_real_escape_string($db, $email);
