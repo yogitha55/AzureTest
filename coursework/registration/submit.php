@@ -5,7 +5,7 @@ if(isset($_POST["submit"]))
     $userid = $_POST["userid"];
     $name = $_POST["name"];
     $email = $_POST["email"];
-    //$phone = $_POST["phone"];
+    $phone = $_POST["phone"];
     $password = $_POST["password"];
 
     echo $userid." ".$name." ".$email." ".$password;

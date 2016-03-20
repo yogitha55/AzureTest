@@ -47,14 +47,14 @@
 					</td>
 				</tr>
 				<tr>
-					<!--<td style="font-weight: bold">
+					<td style="font-weight: bold">
 						<div align="right">
 							<label for="phone">PhoneNumber</label>
 						</div>
 					</td>
-					<!--<td>
-						<input name="phone" type="tel" class="input" size="11" required />
-					</td>-->
+					<td>
+						<input name="phone" type="number" class="input" size="11" />
+					</td>
 				</tr>
 				<tr>
 					<td height="23" style="font-weight: bold">
