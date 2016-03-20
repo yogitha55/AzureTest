@@ -30,8 +30,7 @@
 			$result=mysqli_query($db,$sql);
 			$row=mysqli_fetch_array($result,MYSQLI_ASSOC) ;
 
-			echo $userID."";
-			
+
 			//If username and password exist in our database then create a session.
 			//Otherwise echo error.
 			
