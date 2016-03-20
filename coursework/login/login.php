@@ -28,8 +28,8 @@
 			echo $name." ".$username." ".$password;
 
 			//Check username and password from database
-			//$sql="SELECT userID FROM users WHERE username='$username' and password='$password'";
-			$sql="SELECT userID FROM users WHERE username='pra' and password='bcbe3365e6ac95ea2c0343a2395834dd'";
+			$sql="SELECT userID FROM users WHERE username='$username' and password='$password'";
+			//$sql="SELECT userID FROM users WHERE username='pra' and password='bcbe3365e6ac95ea2c0343a2395834dd'";
 			$result=mysqli_query($db,$sql);
 			$row=mysqli_fetch_array($result,MYSQLI_ASSOC) ;
 			//$result = mysqli_query("SELECT email FROM users WHERE userName='$username' and password = '$password'");
@@ -41,11 +41,11 @@
 			
 			if(mysqli_num_rows($result) == 0)
 			{
-				$error = "Incorrect username or password.";
-			}else
-			{
 				$_SESSION['username'] = $username; // Initializing Session
 				header("location: home.php"); // Redirecting To Other Page
+			}else
+			{
+				$error = "Incorrect username or password.";
 			}
 
 		}
