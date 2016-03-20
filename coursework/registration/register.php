@@ -19,7 +19,7 @@
 			<table width="400"  border="0" cellpadding="10" cellspacing="10">
 				<tr>
 					<td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
-					<td> <a href="http://yogitha.azurewebsites.net/coursework/login/login.php">Login Now</a> </td>
+					<td> <a href="http://yogitha.azurewebsites.net/coursework/index.php">Login Now</a> </td>
 				</tr>
 				<tr>
 					<td style="font-weight: bold">
