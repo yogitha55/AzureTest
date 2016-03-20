@@ -25,7 +25,7 @@
 						<div align="right"><label for="userId">UserId</label></div>
 					</td>
 					<td>
-						<input name="userId" type="number" class="input" size="25" required />
+						<input name="userid" type="number" class="input" size="25" required />
 					</td>
 				</tr>
 				<tr>
