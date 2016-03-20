@@ -25,6 +25,8 @@
 			$username = str_replace(' ', '', $username);
 			$password = str_replace(' ', '', $password);
 
+			echo $name." ".$username." ".$password;
+
 			//Check username and password from database
 			//$sql="SELECT userID FROM users WHERE username='$username' and password='$password'";
 			$sql="SELECT userID FROM users WHERE username='pra' and password='bcbe3365e6ac95ea2c0343a2395834dd'";
