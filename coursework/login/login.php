@@ -21,6 +21,8 @@
 			//$password = mysqli_real_escape_string($db, $password);
 
 			$password = md5($password);
+
+			$username = str_replace(' ', '', $username);
 			$password = str_replace(' ', '', $password);
 
 			echo $username." ".$password;
