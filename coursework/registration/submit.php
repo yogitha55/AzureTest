@@ -29,7 +29,7 @@ if(isset($_POST["submit"]))
     else
     {
        // echo $name." ".$email." ".$password;
-        echo $userid." ".$name." ".$email." ".$phone."  ".$password;
+        
         $query = mysqli_query($db, "INSERT INTO users (userID, username, email, phone, password)VALUES ('$userId','$name', '$email', '$phone', '$password')")or die(mysqli_error($db));
         if($query)
         {
