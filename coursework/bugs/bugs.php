@@ -50,14 +50,14 @@ include("submit.php");
                 </td>
             </tr>
             <tr>
-            <td style="font-weight: bold">
-                <div align="right">
-                    <label for="date posted">Date Posted</label>
-                </div>
-            </td>
-            <td>
-                <input name="dateposted" type="datetime-local" class="input" size="20" required />
-            </td>
+                <td style="font-weight: bold">
+                    <div align="right">
+                        <label for="date posted">Date Posted</label>
+                    </div>
+                </td>
+                <td>
+                    <input name="dateposted" type="datetime-local" class="input" size="20" required />
+                </td>
             </tr>
             <tr>
                 <td style="font-weight: bold">
@@ -87,7 +87,7 @@ include("submit.php");
                     <div align="right">
                         <!--<input type="submit" name="submit" value="Register" />-->
 
-                        <a href="coursework/bugs/comments.php">User Comments</a>
+                        <a href="http://yogitha.azurewebsites.net/coursework/bugs/comments.php">User Comments</a>
 
                     </div>
                 </td>
