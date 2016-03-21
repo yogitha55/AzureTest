@@ -35,7 +35,7 @@ include("submit.php");
                     </div>
                 </td>
                 <td>
-                    <input name="bugdescription" type="text" class="input" size="25" required />
+                    <input name="bugdescription" type="text" class="input" required />
                     <textarea rows="4" cols="50" maxlength="50">
 Enter text here...</textarea>
                 </td>
