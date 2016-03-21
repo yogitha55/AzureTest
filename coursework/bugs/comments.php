@@ -69,15 +69,27 @@ include("submit.php");
                     <input name="datefixed" type="datetime-local" class="input" size="20" required />
                 </td>
             </tr>
-            
+            <tr>
+                <td height="23"></td>
+                <td>
+                    <div align="left">
+
+                        <INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;">
+
+
+
+                    </div>
+                </td>
+            </tr>
 
 
             <tr>
                 <td height="23"></td>
                 <td>
                     <div align="right">
+
                         <a href="http://yogitha.azurewebsites.net/coursework/bugs/attachments.php">File Upload</a>
-                        
+
 
 
                     </div>
