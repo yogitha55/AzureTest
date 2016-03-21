@@ -79,13 +79,16 @@ include("submit.php");
                     <input name="fixed/unfixed" type="text" class="input" size="20" required />
                 </td>
             </tr>
-            <h1>Comments</h1>
-            
+
+
             <tr>
                 <td height="23"></td>
                 <td>
                     <div align="right">
-                        <input type="submit" name="submit" value="Register" />
+                        <!--<input type="submit" name="submit" value="Register" />-->
+
+                        <a href="http://yogitha.azurewebsites.net/coursework/bugs/comments.php">User Comments</a>
+
                     </div>
                 </td>
             </tr>
