@@ -87,7 +87,7 @@ include("submit.php");
                     <div align="right">
                         <!--<input type="submit" name="submit" value="Register" />-->
 
-                        <a href="http://yogitha.azurewebsites.net/coursework/bugs/comments.php">User Comments</a>
+                        <a href="coursework/bugs/comments.php">User Comments</a>
 
                     </div>
                 </td>
