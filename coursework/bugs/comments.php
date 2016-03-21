@@ -69,16 +69,7 @@ include("submit.php");
                     <input name="datefixed" type="datetime-local" class="input" size="20" required />
                 </td>
             </tr>
-            <tr>
-                <td style="font-weight: bold">
-                    <div align="right">
-                        <label for="Fixed/unfixed">Fixed/Unfixed</label>
-                    </div>
-                </td>
-                <td>
-                    <input name="fixed/unfixed" type="text" class="input" size="20" required />
-                </td>
-            </tr>
+            
 
 
             <tr>
