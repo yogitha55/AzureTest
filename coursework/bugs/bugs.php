@@ -49,13 +49,33 @@ include("submit.php");
                 </td>
             </tr>
             <tr>
-                <td height="23" style="font-weight: bold">
+            <td style="font-weight: bold">
+                <div align="right">
+                    <label for="date posted">Date Posted</label>
+                </div>
+            </td>
+            <td>
+                <input name="dateposted" type="datetime-local" class="input" size="20" required />
+            </td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold">
                     <div align="right">
-                        <label for="password">Password</label>
+                        <label for="date fixed">Date Fixed</label>
                     </div>
                 </td>
                 <td>
-                    <input name="password" type="password" class="input" size="25" required />
+                    <input name="datefixed" type="datetime-local" class="input" size="20" required />
+                </td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold">
+                    <div align="right">
+                        <label for="Fixed/unfixed">Fixed/Unfixed</label>
+                    </div>
+                </td>
+                <td>
+                    <input name="fixed/unfixed" type="text" class="input" size="20" required />
                 </td>
             </tr>
             <tr>
