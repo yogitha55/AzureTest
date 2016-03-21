@@ -76,6 +76,7 @@ include("submit.php");
                 <td height="23"></td>
                 <td>
                     <div align="right">
+                        <a href="http://yogitha.azurewebsites.net/coursework/bugs/attachments.php">File Upload</a>
                         <input type="submit" name="submit" value="Register" />
 
 
