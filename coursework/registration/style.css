@@ -24,7 +24,7 @@ fieldset
 {
 	width: 500px;
 	font-family: "Times New Roman", Times, serif;
-	border: 0px solid #0066FF;
+	border: 0px solid #dddddd;
 	background: #dddddd;
 	border-radius: 5px;
 	padding: 15px;
@@ -46,7 +46,7 @@ fieldset legend
 }
 form {
 
-	background-color: #2799e6;
+	background-color: #dddddd;
 	width: 700px;
 	margin: 0 auto;
 }
