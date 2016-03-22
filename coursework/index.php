@@ -24,7 +24,7 @@
 
 <body>
 <div align="center">
-<h1 style="font-family:Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif; font-size:32px;">PHP Login Form with Session</h1>
+<h1 style="font-family:Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif; font-size:32px;"> Users Login  </h1>
 <div class="loginBox">
     <h3>Login Form</h3>
     <br><br>
