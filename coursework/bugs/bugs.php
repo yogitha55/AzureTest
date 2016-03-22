@@ -94,6 +94,9 @@ include("submit.php");
         <section>
             <h1>Comments</h1>
             <table width="500"  border="0" cellpadding="10" cellspacing="10">
+                <tr>
+                    <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
+                </tr>
             <tr>
                 <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
             </tr>
