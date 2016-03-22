@@ -16,7 +16,7 @@
 </head>
 <nav>
     <ul>
-        
+
         <a href="registration/register.php">Register</a>
 
     </ul>
