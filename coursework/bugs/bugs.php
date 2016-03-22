@@ -16,7 +16,7 @@ include("submit.php");
 <form method="post" action="">
     <fieldset>
         <legend>BugsList</legend>
-        <table width="800"  border="0" cellpadding="10" cellspacing="5">
+        <table width="500"  border="0" cellpadding="10" cellspacing="10">
             <tr>
                 <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
             </tr>
@@ -93,6 +93,30 @@ include("submit.php");
         </table>
         <section>
             <h1>Comments</h1>
+            <table>
+            <tr>
+                <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold">
+                    <div align="right"><label for="name">Bug Title</label></div>
+                </td>
+                <td>
+                    <input name="name" type="text" class="input" size="70" required />
+                </td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold">
+                    <div align="right">
+                        <label for="email">Bug Description</label>
+                    </div>
+                </td>
+                <td>
+                    <input name="bugdescription" type="text" class="input" size="25" required />
+                    <textarea rows="4" cols="50" maxlength="50">Enter text here...</textarea>
+                </td>
+            </tr>
+                </table>
         </section>
     </fieldset>
 </form>
