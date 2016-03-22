@@ -79,11 +79,6 @@ include("submit.php");
                     <input name="fixed/unfixed" type="text" class="input" size="20" required />
                 </td>
             </tr>
-            <section>
-                <p>Comments</p>
-            </section>
-
-
             <tr>
                 <td height="23"></td>
                 <td>
@@ -95,6 +90,9 @@ include("submit.php");
                     </div>
                 </td>
             </tr>
+            <section>
+                <h1>Comments</h1>
+                </section>
         </table>
     </fieldset>
 </form>
