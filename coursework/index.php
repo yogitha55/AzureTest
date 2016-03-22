@@ -17,8 +17,8 @@
 <nav>
     <ul>
         <li><a href="index.php">Login</a></li>
-        <li><a href="register.php">Register</a></li>
-        
+        <li><a href="registration/register.php">Register</a></li>
+
     </ul>
 </nav>
 
