@@ -44,7 +44,7 @@
 				$_SESSION['username'] = $username; // Initializing Session
 				header("location: http://yogitha.azurewebsites.net/coursework/login/home.php"); // Redirecting To Other Page
 			}
-			elseif(mysqli_num_rows($result) > 0)
+			elseif($result && mysql_num_rows($result)  > 0)
 			{
 				$error = "Username and Password doesnot exist plz register";
 			}
