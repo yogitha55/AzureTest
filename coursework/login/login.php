@@ -39,23 +39,35 @@
 				//If username and password exist in our database then create a session.
 			//Otherwise echo error.
 			
-			if(mysqli_num_rows($result) == 1)
+			if(mysqli_num_rows($result) > 1)
 			{
 				$_SESSION['username'] = $username; // Initializing Session
 				header("location: http://yogitha.azurewebsites.net/coursework/login/home.php"); // Redirecting To Other Page
-			}else
+			}
+			elseif(mysqli_num_rows($result) > 0)
+			{
+				$error = "Username and Password doesnot exist plz register";
+			}
+			else
 			{
 				$error = "Incorrect username or password.";
 			}
-			if(mysqli_num_rows($result) == 1)
-			{
-				$_SESSION['username'] = $username; // Initializing Session
-				header("location: http://yogitha.azurewebsites.net/coursework/login/home.php"); // Redirecting To Other Page
-			}else
-			{
-				$error = "doesnot exist.";
-			}
+		//	if ($db_found) {
+			//	$result =mysql_query("SELECT 1 FROM my_table WHERE `Username` = '$username'");
+			//	if ($result && mysql_num_rows($result) > 0)
 
+			//	{
+			//		echo 'Username and Password Found';
+			//	}
+			//	else
+			//	{
+			//		echo 'Username and Password NOT Found';
+			//	}
+			//}
+			//else {
+			//	print "Database NOT Found.";
+			//	mysql_close($db_handle);
+			//}
 
 		}
 	}
