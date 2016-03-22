@@ -14,8 +14,8 @@ input[type=submit]
 {
     padding:5px;
     font-family:"Times New Roman", Times, serif;
-    font-size:23px;
-    font-weight:normal;
+    font-size:15px;
+    font-weight:bold;
     background:#003399;
     border:0px solid #dddddd;
     color:#FFF;
@@ -34,7 +34,7 @@ fieldset legend
     padding:5px;
     font-family:"Times New Roman", Times, serif;
     font-size:23px;
-    font-weight:normal;
+    font-weight:bold;
     background:#003399;
     color:#FFF;
 }
