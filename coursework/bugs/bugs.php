@@ -112,8 +112,8 @@ include("submit.php");
                     </div>
                 </td>
                 <td>
-                    <textarea><input name="usercommented" type="userId" class="input" rows="4" cols="50" maxlength="50" size="25" required />
-                    Enter text here...</textarea>
+                    <input name="usercommented" type="userId" class="input" size="11" required />
+
                 </td>
             </tr>
                 <tr>
@@ -123,7 +123,7 @@ include("submit.php");
                         </div>
                     </td>
                     <td>
-                        <input name="dateposted" type="datetime-local" class="input" size="25" required />
+                        <input name="dateposted" type="datetime-local" class="input" size="11" required />
 
                     </td>
                 </tr>
@@ -134,7 +134,7 @@ include("submit.php");
                         </div>
                     </td>
                     <td>
-                        <input name="bugthecommentbelongsto" type="text" class="input" size="25" required />
+                        <input name="bugthecommentbelongsto" type="text" class="input" required />
                         <textarea rows="4" cols="50" maxlength="50">Enter text here...</textarea>
                     </td>
                 </tr>
