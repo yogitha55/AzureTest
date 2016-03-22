@@ -90,10 +90,10 @@ include("submit.php");
                     </div>
                 </td>
             </tr>
-            <section>
-                <h1>Comments</h1>
-                </section>
         </table>
+        <section>
+            <h1>Comments</h1>
+        </section>
     </fieldset>
 </form>
 </body>
