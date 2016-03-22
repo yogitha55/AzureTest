@@ -31,7 +31,7 @@ include("submit.php");
             <tr>
                 <td style="font-weight: bold">
                     <div align="right">
-                        <label for="email">Bug Description</label>
+                        <label for="bugdescription">Bug Description</label>
                     </div>
                 </td>
                 <td>
@@ -99,23 +99,46 @@ include("submit.php");
             </tr>
             <tr>
                 <td style="font-weight: bold">
-                    <div align="right"><label for="name">Bug Title</label></div>
+                    <div align="right"><label for="name">Comment Text</label></div>
                 </td>
                 <td>
-                    <input name="name" type="text" class="input" size="70" required />
+                    <input name="commenttext" type="text" class="input" size="70" required />
                 </td>
             </tr>
             <tr>
                 <td style="font-weight: bold">
                     <div align="right">
-                        <label for="email">Bug Description</label>
+                        <label for="usercommented">User Commented</label>
                     </div>
                 </td>
                 <td>
-                    <input name="bugdescription" type="text" class="input" size="25" required />
-                    <textarea rows="4" cols="50" maxlength="50">Enter text here...</textarea>
+                    <textarea><input name="usercommented" type="userId" class="input" rows="4" cols="50" maxlength="50" size="25" required />
+                    Enter text here...</textarea>
                 </td>
             </tr>
+                <tr>
+                    <td style="font-weight: bold">
+                        <div align="right">
+                            <label for="dateposted">Date Posted</label>
+                        </div>
+                    </td>
+                    <td>
+                        <input name="dateposted" type="datetime-local" class="input" size="25" required />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">
+                        <div align="right">
+                            <label for="bugthecommentbelongsto">Bug the comments belongs to</label>
+                        </div>
+                    </td>
+                    <td>
+                        <input name="bugthecommentbelongsto" type="text" class="input" size="25" required />
+                        <textarea rows="4" cols="50" maxlength="50">Enter text here...</textarea>
+                    </td>
+                </tr>
+
                 </table>
         </section>
     </fieldset>
