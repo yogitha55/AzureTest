@@ -38,21 +38,29 @@
 
 				//If username and password exist in our database then create a session.
 			//Otherwise echo error.
-			
+			if(mysqli_num_rows($result) > 0)
+			{
+				$_SESSION['username'] = $username; // Initializing Session
+				header("location: http://yogitha.azurewebsites.net/coursework/login/home.php"); // Redirecting To Other Page
+			}
+
+			else
+			{
+				$error = "no.";
+			}
+
+
 			if(mysqli_num_rows($result) == 1)
 			{
 				$_SESSION['username'] = $username; // Initializing Session
 				header("location: http://yogitha.azurewebsites.net/coursework/login/home.php"); // Redirecting To Other Page
 			}
 
-			elseif(mysqli_num_rows($result) == 1)
+			else
 			{
 				$error = "Incorrect username or password.";
 			}
-		else
-			{
-				$error = "doesnot exist.";
-			}
+
 
 
 		}
