@@ -98,9 +98,6 @@ include("submit.php");
                     <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
                 </tr>
             <tr>
-                <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
-            </tr>
-            <tr>
                 <td style="font-weight: bold">
                     <div align="right"><label for="name">Comment Text</label></div>
                 </td>
