@@ -34,7 +34,7 @@ label
 }
 input[type=submit]
 {
-	background-color: #003399;
+	background-color: #63C;
 	width:300px;
 	border:0;
 	padding:10px;
@@ -61,7 +61,7 @@ body
 {
 	margin: 0;
 	padding: 0;
-	background-color:#dddddd;
+	background-color:#D6F5F5;
 }
 .top-bar
 {
