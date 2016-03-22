@@ -78,17 +78,7 @@ include("submit.php");
                     <input name="fixed/unfixed" type="text" class="input" size="20" required />
                 </td>
             </tr>
-            <tr>
-                <td height="23"></td>
-                <td>
-                    <div align="right">
-                        <!--<input type="submit" name="submit" value="Register" />-->
 
-                        <a href="http://yogitha.azurewebsites.net/coursework/bugs/comments.php">User Comments</a>
-
-                    </div>
-                </td>
-            </tr>
         </table>
         <section>
             <h1>Comments</h1>
@@ -157,8 +147,20 @@ include("submit.php");
                             <input type="submit" value="Upload File" name="submit">
                         </td>
                     </tr>
+                    <tr>
+                        <td height="23"></td>
+                        <td>
+                            <div align="right">
+                                <input type="submit" name="submit" value="Register" />
+
+
+
+                            </div>
+                        </td>
+                    </tr>
                     </table>
                 </section>
+
 
     </fieldset>
 </form>
