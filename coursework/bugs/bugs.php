@@ -80,7 +80,7 @@ include("submit.php");
                 </td>
             </tr>
             <hr>
-            <h3>Comments</h3>
+            <p>Comments</p>
 
 
             <tr>
