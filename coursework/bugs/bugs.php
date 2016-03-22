@@ -79,10 +79,9 @@ include("submit.php");
                     <input name="fixed/unfixed" type="text" class="input" size="20" required />
                 </td>
             </tr>
-            <tr>
-                <hr>
+            <section>
                 <p>Comments</p>
-            </tr>
+            </section>
 
 
             <tr>
