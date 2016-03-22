@@ -16,7 +16,7 @@ include("submit.php");
 <form method="post" action="">
     <fieldset>
         <legend>BugsList</legend>
-        <table width="600"  border="0" cellpadding="10" cellspacing="10">
+        <table width="500"  border="1" cellpadding="10" cellspacing="10">
             <tr>
                 <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
             </tr>
