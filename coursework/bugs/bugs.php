@@ -140,6 +140,26 @@ include("submit.php");
 
                 </table>
         </section>
+        <section>
+            <h1>Attachments</h1>
+            <table>
+
+                <table width="400"  border="0" cellpadding="10" cellspacing="10">
+                    <tr>
+                        <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold">
+                            <div align="right"><label for="name">File Upload</label></div>
+                        </td>
+                        <td>
+                            <input name="fileToUpload" type="file" id="fileToUpload"class="input">
+                            <input type="submit" value="Upload File" name="submit">
+                        </td>
+                    </tr>
+                    </table>
+                </section>
+
     </fieldset>
 </form>
 </body>
