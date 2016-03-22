@@ -14,6 +14,13 @@
 <title>PHP Login Form with Session</title>
 <link rel="stylesheet" href="login/style.css" type="text/css" />
 </head>
+<nav>
+    <ul>
+        <li><a href="index.php">Login</a></li>
+        <li><a href="register.php">Register</a></li>
+        
+    </ul>
+</nav>
 
 <body>
 <div align="center">
