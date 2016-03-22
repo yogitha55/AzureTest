@@ -16,7 +16,7 @@ include("submit.php");
 <form method="post" action="">
     <fieldset>
         <legend>BugsList</legend>
-        <table width="400"  border="0" cellpadding="10" cellspacing="10">
+
             <tr>
                 <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
             </tr>
@@ -90,7 +90,7 @@ include("submit.php");
                     </div>
                 </td>
             </tr>
-        </table>
+        
         <section>
             <h1>Comments</h1>
         </section>
