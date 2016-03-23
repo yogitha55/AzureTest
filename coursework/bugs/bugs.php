@@ -35,7 +35,7 @@ include("buglist.php");
                     </div>
                 </td>
                 <td>
-                    <input name="bugdesc" type="text" class="input" size="25" required />
+                    <input name="bugdesc" type="text" class="input" size="25" />
                 </td>
             </tr>
             <tr>
@@ -45,7 +45,7 @@ include("buglist.php");
                     </div>
                 </td>
                 <td>
-                    <input name="userId" type="number" class="input" size="20" required />
+                    <input name="userId" type="number" class="input" size="20"  />
                 </td>
             </tr>
             <tr>
@@ -55,7 +55,7 @@ include("buglist.php");
                     </div>
                 </td>
                 <td>
-                    <input name="dateposted" type="datetime-local" class="input" size="20" required />
+                    <input name="dateposted" type="datetime-local" class="input" size="20"  />
                 </td>
             </tr>
             <tr>
@@ -65,7 +65,7 @@ include("buglist.php");
                     </div>
                 </td>
                 <td>
-                    <input name="datefixed" type="datetime-local" class="input" size="20" required />
+                    <input name="datefixed" type="datetime-local" class="input" size="20"  />
                 </td>
             </tr>
             <tr>
@@ -75,7 +75,7 @@ include("buglist.php");
                     </div>
                 </td>
                 <td>
-                    <input name="fixedunfixed" type="number" class="input" size="20" required />
+                    <input name="fixedunfixed" type="number" class="input" size="20"  />
                 </td>
             </tr>
 
@@ -91,7 +91,7 @@ include("buglist.php");
                     <div align="right"><label for="name">Comment Text</label></div>
                 </td>
                 <td>
-                    <input name="commenttext" type="text" class="input" size="70" required />
+                    <input name="commenttext" type="text" class="input" size="70"  />
                 </td>
             </tr>
             <tr>
@@ -101,7 +101,7 @@ include("buglist.php");
                     </div>
                 </td>
                 <td>
-                    <input name="usercommented" type="userId" class="input" size="11" required />
+                    <input name="usercommented" type="userId" class="input" size="11"  />
 
                 </td>
             </tr>
@@ -112,7 +112,7 @@ include("buglist.php");
                         </div>
                     </td>
                     <td>
-                        <input name="dateposted" type="datetime-local" class="input" size="11" required />
+                        <input name="dateposted" type="datetime-local" class="input" size="11"  />
 
                     </td>
                 </tr>
@@ -123,7 +123,7 @@ include("buglist.php");
                         </div>
                     </td>
                     <td>
-                        <input name="bugthecommentbelongsto" type="text" class="input" size="25" required />
+                        <input name="bugthecommentbelongsto" type="text" class="input" size="25"  />
 
                     </td>
                 </tr>

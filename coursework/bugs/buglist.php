@@ -20,10 +20,15 @@ if(isset($_POST["submit"]))
     $fixdate = mysqli_real_escape_string($db, $fixdate);
     $fixed = mysqli_real_escape_string($db, $fixed);
 
+    $query = mysqli_query($db, "INSERT INTO bugs (title, DESC )VALUES ('$userid', '$name', '$email',  '$password', '$phone')")or die(mysqli_error($db));
+    if($query)
+    {
+        $msg = "Thank You! you are now registered.";
+    }
 
     $query = mysqli_query($db, "INSERT INTO bugs (title, desc)VALUES ('$bugtitle', '$bugdesc')")or die(mysqli_error($db));
     if($query)
-    {
+
 
         $msg = "Thank You! Bug has been created in the database.";
         $msg = $msg + $login_user;
