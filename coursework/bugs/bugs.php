@@ -16,16 +16,19 @@ include("buglist.php");
 <form method="post" action="">
     <fieldset>
         <h1>BugsList</h1>
+
+
         <table>
             <tr>
                 <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
             </tr>
+
             <tr>
                 <td style="font-weight: bold">
                     <div align="right"><label for="name">Bug Title</label></div>
                 </td>
                 <td>
-                    <input name="bugtitle" type="text" class="input" size="70" required />
+                    <input name="title" type="text" class="input" rows="10" size="50"required />
                 </td>
             </tr>
             <tr>
@@ -35,17 +38,24 @@ include("buglist.php");
                     </div>
                 </td>
                 <td>
-                    <input name="bugdesc" type="text" class="input" size="25" />
+                    <textarea name="bugdesc" rows="5" columns="20" ></textarea>
+
                 </td>
             </tr>
             <tr>
                 <td style="font-weight: bold">
-                    <div align="right">
-                        <label for="userthatpostederror">User that posted error</label>
-                    </div>
+                    <div align="right"><label for="userId">User Id</label></div>
                 </td>
                 <td>
-                    <input name="userId" type="number" class="input" size="20"  />
+                    <input name="userId" type="number" class="input" size="8" required />
+                </td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold">
+                    <div align="right"><label for="bugId">Bug Id</label></div>
+                </td>
+                <td>
+                    <input name="budId" type="number" class="input" size="8" required />
                 </td>
             </tr>
             <tr>
@@ -55,7 +65,7 @@ include("buglist.php");
                     </div>
                 </td>
                 <td>
-                    <input name="dateposted" type="datetime-local" class="input" size="20"  />
+                    <input name="postdate" type="datetime-local" class="input" size="8" required />
                 </td>
             </tr>
             <tr>
@@ -65,17 +75,17 @@ include("buglist.php");
                     </div>
                 </td>
                 <td>
-                    <input name="datefixed" type="datetime-local" class="input" size="20"  />
+                    <input name="fixdate" type="datetime-local" class="input" size="8" required />
                 </td>
             </tr>
             <tr>
                 <td style="font-weight: bold">
                     <div align="right">
-                        <label for="Fixed/unfixed">Fixed/Unfixed</label>
+                        <label for="Fixed">Fixed</label>
                     </div>
                 </td>
                 <td>
-                    <input name="fixedunfixed" type="number" class="input" size="20"  />
+                    <input name="fixed" type="number" class="input" size="8" required />
                 </td>
             </tr>
 
@@ -86,25 +96,36 @@ include("buglist.php");
                 <tr>
                     <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
                 </tr>
-            <tr>
-                <td style="font-weight: bold">
-                    <div align="right"><label for="name">Comment Text</label></div>
-                </td>
-                <td>
-                    <input name="commenttext" type="text" class="input" size="70"  />
-                </td>
-            </tr>
-            <tr>
+                <tr>
+                    <td style="font-weight: bold">
+                        <div align="right"><label for="name">Comment </label></div>
+                    </td>
+                    <td>
+                        <textarea name="comment" rows="5" columns="20" ></textarea>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">
+                        <div align="right">
+                            <label for="usercommented">User Id</label>
+                        </div>
+                    </td>
+                    <td>
+                        <input name="userId" type="int" class="input" size="8" required />
+
+                    </td>
+
+                </tr>
                 <td style="font-weight: bold">
                     <div align="right">
-                        <label for="usercommented">User Commented</label>
+                        <label for="bugid">Bug Id</label>
                     </div>
                 </td>
                 <td>
-                    <input name="usercommented" type="userId" class="input" size="11"  />
+                    <input name="bugId" type="number" class="input" size="8" required />
 
                 </td>
-            </tr>
                 <tr>
                     <td style="font-weight: bold">
                         <div align="right">
@@ -112,23 +133,23 @@ include("buglist.php");
                         </div>
                     </td>
                     <td>
-                        <input name="dateposted" type="datetime-local" class="input" size="11"  />
+                        <input name="dateposted" type="datetime-local" class="input" size="11" required />
 
                     </td>
                 </tr>
                 <tr>
                     <td style="font-weight: bold">
                         <div align="right">
-                            <label for="bugthecommentbelongsto">Bug the comments belongs to</label>
+                            <label for="commentId">Comment Id</label>
                         </div>
                     </td>
                     <td>
-                        <input name="bugthecommentbelongsto" type="text" class="input" size="25"  />
+                        <input name="commentId" type="number" class="input" size="8" required />
 
                     </td>
                 </tr>
 
-                </table>
+            </table>
         </section>
         <section>
             <h1>Attachments</h1>
@@ -155,11 +176,12 @@ include("buglist.php");
 
 
 
+
                             </div>
                         </td>
                     </tr>
-                    </table>
-                </section>
+                </table>
+        </section>
 
 
     </fieldset>
