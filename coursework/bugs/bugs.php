@@ -20,12 +20,13 @@ include("submit.php");
             <tr>
                 <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
             </tr>
+
             <tr>
                 <td style="font-weight: bold">
                     <div align="right"><label for="name">Bug Title</label></div>
                 </td>
                 <td>
-                    <input name="name" type="text" class="input" size="70" required />
+                    <input name="title" type="text" class="input" size="70" required />
                 </td>
             </tr>
             <tr>
@@ -35,17 +36,23 @@ include("submit.php");
                     </div>
                 </td>
                 <td>
-                    <input name="bugdescription" type="text" class="input" size="25" required />
+                    <input name="description" type="text" class="input" size="25" required />
                 </td>
             </tr>
             <tr>
                 <td style="font-weight: bold">
-                    <div align="right">
-                        <label for="userthatpostederror">User that posted error</label>
-                    </div>
+                    <div align="right"><label for="userId">User Id</label></div>
                 </td>
                 <td>
-                    <input name="userthatpostederror" type="text" class="input" size="20" required />
+                    <input name="userId" type="number" class="input" size="70" required />
+                </td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold">
+                    <div align="right"><label for="bugId">Bug Id</label></div>
+                </td>
+                <td>
+                    <input name="budId" type="number" class="input" size="70" required />
                 </td>
             </tr>
             <tr>
@@ -55,7 +62,7 @@ include("submit.php");
                     </div>
                 </td>
                 <td>
-                    <input name="dateposted" type="datetime-local" class="input" size="20" required />
+                    <input name="postdate" type="datetime-local" class="input" size="20" required />
                 </td>
             </tr>
             <tr>
@@ -65,17 +72,17 @@ include("submit.php");
                     </div>
                 </td>
                 <td>
-                    <input name="datefixed" type="datetime-local" class="input" size="20" required />
+                    <input name="fixdate" type="datetime-local" class="input" size="20" required />
                 </td>
             </tr>
             <tr>
                 <td style="font-weight: bold">
                     <div align="right">
-                        <label for="Fixed/unfixed">Fixed/Unfixed</label>
+                        <label for="Fixed">Fixed</label>
                     </div>
                 </td>
                 <td>
-                    <input name="fixed/unfixed" type="text" class="input" size="20" required />
+                    <input name="fixed" type="number" class="input" size="20" required />
                 </td>
             </tr>
 
@@ -88,20 +95,29 @@ include("submit.php");
                 </tr>
             <tr>
                 <td style="font-weight: bold">
-                    <div align="right"><label for="name">Comment Text</label></div>
+                    <div align="right"><label for="name">Comment </label></div>
                 </td>
                 <td>
-                    <input name="commenttext" type="text" class="input" size="70" required />
+                    <input name="comment" type="text" class="input" size="70" required />
                 </td>
             </tr>
             <tr>
                 <td style="font-weight: bold">
                     <div align="right">
-                        <label for="usercommented">User Commented</label>
+                        <label for="usercommented">User Id</label>
                     </div>
                 </td>
                 <td>
-                    <input name="usercommented" type="userId" class="input" size="11" required />
+                    <input name="userId" type="int" class="input" size="11" required />
+
+                </td>
+                <td style="font-weight: bold">
+                    <div align="right">
+                        <label for="bugid">Bug Id</label>
+                    </div>
+                </td>
+                <td>
+                    <input name="bugId" type="number" class="input" size="11" required />
 
                 </td>
             </tr>
@@ -119,11 +135,11 @@ include("submit.php");
                 <tr>
                     <td style="font-weight: bold">
                         <div align="right">
-                            <label for="bugthecommentbelongsto">Bug the comments belongs to</label>
+                            <label for="commentId">Comment Id</label>
                         </div>
                     </td>
                     <td>
-                        <input name="bugthecommentbelongsto" type="text" class="input" size="25" required />
+                        <input name="commentId" type="number" class="input" size="25" required />
 
                     </td>
                 </tr>
@@ -151,11 +167,17 @@ include("submit.php");
                         <td height="23"></td>
                         <td>
                             <div align="right">
-                                <input type="submit" name="submit" value="Register" />
+                                <input type="submit" name="submit" value="submit" />
+
 
 
 
                             </div>
+                    <tr>
+                        <td colspan="2">Bugs</td>
+                        <td> <a href="http://yogitha.azurewebsites.net/coursework/login/home.php">Thank you</a> </td>
+                    </tr><br>
+                    <tr>
                         </td>
                     </tr>
                     </table>
