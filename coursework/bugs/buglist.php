@@ -6,7 +6,7 @@ if(isset($_POST["submit"]))
     $bugtitle = $_POST['bugtitle'];
     $bugdesc = $_POST["bugdesc"];
     //$useriId = $_POST["userID"];
-    $postdate = DATE_ISO8601();
+    $postdate = strtotime("3.00pm july 28 2014");
 
     $bugtitle= mysqli_real_escape_string($db, $bugtitle);
     $bugdesc = mysqli_real_escape_string($db, $bugdesc);
