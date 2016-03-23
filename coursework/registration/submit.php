@@ -2,7 +2,7 @@
 $msg = "";
 if(isset($_POST["submit"]))
 {
-    $bugtitle = $_POST["bugtitle"];
+    $userid = $_POST["userid"];
     $name = $_POST["name"];
     $email = $_POST["email"];
     $phone = $_POST["phone"];
