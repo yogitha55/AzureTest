@@ -26,7 +26,7 @@ include("submit.php");
                     <div align="right"><label for="name">Bug Title</label></div>
                 </td>
                 <td>
-                    <input name="title" type="text" class="input" rows="3" required />
+                    <input name="title" type="text" class="input" rows="10" size="50"required />
                 </td>
             </tr>
              <tr>
