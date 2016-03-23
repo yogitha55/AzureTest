@@ -38,7 +38,7 @@ include("submit.php");
                      </div>
                  </td>
                  <td>
-                     <textarea name="bugdesc" rows="5" columns="20" width="20"></textarea>
+                     <textarea name="bugdesc" rows="5" columns="20" ></textarea>
 
                  </td>
              </tr>
@@ -101,7 +101,8 @@ include("submit.php");
                     <div align="right"><label for="name">Comment </label></div>
                 </td>
                 <td>
-                    <input name="comment" type="text" class="input" size="25" required />
+                    <textarea name="comment" rows="5" columns="20" ></textarea>
+
                 </td>
             </tr>
             <tr>
