@@ -21,11 +21,6 @@ if(isset($_POST["submit"]))
     $fixed = mysqli_real_escape_string($db, $fixed);
 
 
-
-    $sql="SELECT * FROM bugs WHERE bugs.ID=".$_GET["id"];
-    $result=mysqli_query($db,$sql);
-    $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
-
     $query = mysqli_query($db, "INSERT INTO bugs (title, desc)VALUES ('$bugtitle', '$bugdesc')")or die(mysqli_error($db));
     if($query)
     {
