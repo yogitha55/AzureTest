@@ -16,7 +16,7 @@ include("submit.php");
 <form method="post" action="">
     <fieldset>
         <h1>BugsList</h1>
-        
+
 
         <table>
             <tr>
@@ -38,7 +38,8 @@ include("submit.php");
                      </div>
                  </td>
                  <td>
-                     <input name="bugdesc" type="text" class="input" size="20" required />
+                     <textarea name="bugdesc" rows="5" columns="20" />
+<!--                     <input name="bugdesc" type="text" class="input" size="20" required />-->
                  </td>
              </tr>
             <tr>
