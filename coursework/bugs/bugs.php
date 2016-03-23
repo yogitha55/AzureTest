@@ -26,17 +26,10 @@ include("submit.php");
                     <div align="right"><label for="name">Bug Title</label></div>
                 </td>
                 <td>
-                    <input name="title" type="text" class="input" size="25" required />
+                    <input name="title" type="text" class="input" rows="3" required />
                 </td>
             </tr>
-            <p>
-                <label>Bug Description</label>
-          <textarea> id = "myTextArea"
-                  rows = "3"
-                  cols = "80">Your text here</textarea>
-            </p>
-
-            <!-- <tr>
+             <tr>
                  <td style="font-weight: bold">
                      <div align="right">
                          <label for="bugdescription">Bug Description</label>
@@ -45,7 +38,7 @@ include("submit.php");
                  <td>
                      <input name="bugdesc" type="text" class="input" size="20" required />
                  </td>
-             </tr>-->
+             </tr>
             <tr>
                 <td style="font-weight: bold">
                     <div align="right"><label for="userId">User Id</label></div>
