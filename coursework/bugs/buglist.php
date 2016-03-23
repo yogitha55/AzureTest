@@ -1,25 +1,12 @@
 <?php
 include("connection.php");
-/*$sql="SELECT * FROM bugs WHERE bugs.ID = ".$_GET["id"];
-$result=mysqli_query($db,$sql);
-while($row=mysqli_fetch_assoc($result))
-{
-    $bugtitle = $row['title'];
-    $bugID = $row['bugID'];
-    $bugdesc = $_POST["desc"];
-    $userId = $_POST["userID"];
-    $dateposted = $_POST["postDate"];
-    $datefixed = $_POST["fixDate"];
-    $fixedunfixed = $_POST["fixed"];
-}*/
-
 
 $msg = "";
 if(isset($_POST["submit"]))
 {
-    $bugtitle = $row['title'];
+    $bugtitle = $_POST['bugtitle'];
     $useriId = $_POST["userID"];
-    $bugdesc = $_POST["desc"];
+    $bugdesc = $_POST["bugdesc"];
     $bugId = $_POST["bugID"];
     $postdate = $_POST["postDate"];
     $fixdate = $_POST["fixDate"];
@@ -38,6 +25,14 @@ if(isset($_POST["submit"]))
     $sql="SELECT * FROM bugs WHERE bugs.ID=".$_GET["id"];
     $result=mysqli_query($db,$sql);
     $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
+
+    $query = mysqli_query($db, "INSERT INTO bugs (title, desc)VALUES ('$bugtitle', '$bugdesc')")or die(mysqli_error($db));
+    if($query)
+    {
+
+        $msg = "Thank You! Bug has been created in the database.";
+        $msg = $msg + $login_user;
+    }
 
 }
 ?>

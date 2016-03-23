@@ -1,7 +1,7 @@
 <?php
 
 include("connection.php");
-include("submit.php");
+include("buglist.php");
 
 ?>
 <!doctype html>
@@ -16,46 +16,36 @@ include("submit.php");
 <form method="post" action="">
     <fieldset>
         <h1>BugsList</h1>
-
-
         <table>
             <tr>
                 <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
             </tr>
-
             <tr>
                 <td style="font-weight: bold">
                     <div align="right"><label for="name">Bug Title</label></div>
                 </td>
                 <td>
-                    <input name="title" type="text" class="input" rows="10" size="50"required />
-                </td>
-            </tr>
-             <tr>
-                 <td style="font-weight: bold">
-                     <div align="right">
-                         <label for="bugdescription">Bug Description</label>
-                     </div>
-                 </td>
-                 <td>
-                     <textarea name="bugdesc" rows="5" columns="20" ></textarea>
-
-                 </td>
-             </tr>
-            <tr>
-                <td style="font-weight: bold">
-                    <div align="right"><label for="userId">User Id</label></div>
-                </td>
-                <td>
-                    <input name="userId" type="number" class="input" size="8" required />
+                    <input name="bugtitle" type="text" class="input" size="70" required />
                 </td>
             </tr>
             <tr>
                 <td style="font-weight: bold">
-                    <div align="right"><label for="bugId">Bug Id</label></div>
+                    <div align="right">
+                        <label for="bugdescription">Bug Description</label>
+                    </div>
                 </td>
                 <td>
-                    <input name="budId" type="number" class="input" size="8" required />
+                    <input name="bugdesc" type="text" class="input" size="25" required />
+                </td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold">
+                    <div align="right">
+                        <label for="userthatpostederror">User that posted error</label>
+                    </div>
+                </td>
+                <td>
+                    <input name="userId" type="number" class="input" size="20" required />
                 </td>
             </tr>
             <tr>
@@ -65,7 +55,7 @@ include("submit.php");
                     </div>
                 </td>
                 <td>
-                    <input name="postdate" type="datetime-local" class="input" size="8" required />
+                    <input name="dateposted" type="datetime-local" class="input" size="20" required />
                 </td>
             </tr>
             <tr>
@@ -75,17 +65,17 @@ include("submit.php");
                     </div>
                 </td>
                 <td>
-                    <input name="fixdate" type="datetime-local" class="input" size="8" required />
+                    <input name="datefixed" type="datetime-local" class="input" size="20" required />
                 </td>
             </tr>
             <tr>
                 <td style="font-weight: bold">
                     <div align="right">
-                        <label for="Fixed">Fixed</label>
+                        <label for="Fixed/unfixed">Fixed/Unfixed</label>
                     </div>
                 </td>
                 <td>
-                    <input name="fixed" type="number" class="input" size="8" required />
+                    <input name="fixedunfixed" type="number" class="input" size="20" required />
                 </td>
             </tr>
 
@@ -98,34 +88,23 @@ include("submit.php");
                 </tr>
             <tr>
                 <td style="font-weight: bold">
-                    <div align="right"><label for="name">Comment </label></div>
+                    <div align="right"><label for="name">Comment Text</label></div>
                 </td>
                 <td>
-                    <textarea name="comment" rows="5" columns="20" ></textarea>
-
+                    <input name="commenttext" type="text" class="input" size="70" required />
                 </td>
             </tr>
             <tr>
                 <td style="font-weight: bold">
                     <div align="right">
-                        <label for="usercommented">User Id</label>
+                        <label for="usercommented">User Commented</label>
                     </div>
                 </td>
                 <td>
-                    <input name="userId" type="int" class="input" size="8" required />
+                    <input name="usercommented" type="userId" class="input" size="11" required />
 
                 </td>
-
             </tr>
-                <td style="font-weight: bold">
-                    <div align="right">
-                        <label for="bugid">Bug Id</label>
-                    </div>
-                </td>
-                <td>
-                    <input name="bugId" type="number" class="input" size="8" required />
-
-                </td>
                 <tr>
                     <td style="font-weight: bold">
                         <div align="right">
@@ -140,11 +119,11 @@ include("submit.php");
                 <tr>
                     <td style="font-weight: bold">
                         <div align="right">
-                            <label for="commentId">Comment Id</label>
+                            <label for="bugthecommentbelongsto">Bug the comments belongs to</label>
                         </div>
                     </td>
                     <td>
-                        <input name="commentId" type="number" class="input" size="8" required />
+                        <input name="bugthecommentbelongsto" type="text" class="input" size="25" required />
 
                     </td>
                 </tr>
@@ -172,8 +151,7 @@ include("submit.php");
                         <td height="23"></td>
                         <td>
                             <div align="right">
-                                <input type="submit" name="submit" value="submit" />
-
+                                <input type="submit" name="submit" value="BugRegister" />
 
 
 
