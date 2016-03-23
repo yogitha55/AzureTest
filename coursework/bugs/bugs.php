@@ -36,7 +36,7 @@ include("submit.php");
                     </div>
                 </td>
                 <td>
-                    <input name="description" type="text" class="input" size="25" required />
+                    <input name="bugdesc" type="text" class="input" size="25" required />
                 </td>
             </tr>
             <tr>
@@ -111,6 +111,8 @@ include("submit.php");
                     <input name="userId" type="int" class="input" size="11" required />
 
                 </td>
+
+            </tr>
                 <td style="font-weight: bold">
                     <div align="right">
                         <label for="bugid">Bug Id</label>
@@ -120,7 +122,6 @@ include("submit.php");
                     <input name="bugId" type="number" class="input" size="11" required />
 
                 </td>
-            </tr>
                 <tr>
                     <td style="font-weight: bold">
                         <div align="right">
@@ -173,11 +174,6 @@ include("submit.php");
 
 
                             </div>
-                    <tr>
-                        <td colspan="2">Bugs</td>
-                        <td> <a href="http://yogitha.azurewebsites.net/coursework/login/home.php">Thank you</a> </td>
-                    </tr><br>
-                    <tr>
                         </td>
                     </tr>
                     </table>
