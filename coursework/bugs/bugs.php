@@ -36,7 +36,7 @@ include("submit.php");
                     </div>
                 </td>
                 <td>
-                    <input name="bugdesc" type="text" class="input" size="25" required />
+                    <input name="bugdesc" type="text" class="input" size="100" required />
                 </td>
             </tr>
             <tr>
@@ -108,7 +108,7 @@ include("submit.php");
                     </div>
                 </td>
                 <td>
-                    <input name="userId" type="int" class="input" size="11" required />
+                    <input name="userId" type="int" class="input" size="8" required />
 
                 </td>
 
@@ -119,7 +119,7 @@ include("submit.php");
                     </div>
                 </td>
                 <td>
-                    <input name="bugId" type="number" class="input" size="11" required />
+                    <input name="bugId" type="number" class="input" size="8" required />
 
                 </td>
                 <tr>
@@ -140,7 +140,7 @@ include("submit.php");
                         </div>
                     </td>
                     <td>
-                        <input name="commentId" type="number" class="input" size="25" required />
+                        <input name="commentId" type="number" class="input" size="8" required />
 
                     </td>
                 </tr>
