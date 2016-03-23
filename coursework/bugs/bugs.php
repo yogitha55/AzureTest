@@ -26,7 +26,7 @@ include("submit.php");
                     <div align="right"><label for="name">Bug Title</label></div>
                 </td>
                 <td>
-                    <input name="title" type="text" class="input" size="70" required />
+                    <input name="title" type="text" class="input" size="25" required />
                 </td>
             </tr>
             <tr>
@@ -36,7 +36,7 @@ include("submit.php");
                     </div>
                 </td>
                 <td>
-                    <input name="bugdesc" type="text" class="input" size="100" required />
+                    <input name="bugdesc" type="text" class="input" size="20" required />
                 </td>
             </tr>
             <tr>
@@ -44,7 +44,7 @@ include("submit.php");
                     <div align="right"><label for="userId">User Id</label></div>
                 </td>
                 <td>
-                    <input name="userId" type="number" class="input" size="70" required />
+                    <input name="userId" type="number" class="input" size="8" required />
                 </td>
             </tr>
             <tr>
@@ -52,7 +52,7 @@ include("submit.php");
                     <div align="right"><label for="bugId">Bug Id</label></div>
                 </td>
                 <td>
-                    <input name="budId" type="number" class="input" size="70" required />
+                    <input name="budId" type="number" class="input" size="8" required />
                 </td>
             </tr>
             <tr>
@@ -62,7 +62,7 @@ include("submit.php");
                     </div>
                 </td>
                 <td>
-                    <input name="postdate" type="datetime-local" class="input" size="20" required />
+                    <input name="postdate" type="datetime-local" class="input" size="8" required />
                 </td>
             </tr>
             <tr>
@@ -72,7 +72,7 @@ include("submit.php");
                     </div>
                 </td>
                 <td>
-                    <input name="fixdate" type="datetime-local" class="input" size="20" required />
+                    <input name="fixdate" type="datetime-local" class="input" size="8" required />
                 </td>
             </tr>
             <tr>
@@ -82,7 +82,7 @@ include("submit.php");
                     </div>
                 </td>
                 <td>
-                    <input name="fixed" type="number" class="input" size="20" required />
+                    <input name="fixed" type="number" class="input" size="8" required />
                 </td>
             </tr>
 
@@ -98,7 +98,7 @@ include("submit.php");
                     <div align="right"><label for="name">Comment </label></div>
                 </td>
                 <td>
-                    <input name="comment" type="text" class="input" size="70" required />
+                    <input name="comment" type="text" class="input" size="25" required />
                 </td>
             </tr>
             <tr>
