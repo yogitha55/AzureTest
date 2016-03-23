@@ -16,6 +16,9 @@ include("submit.php");
 <form method="post" action="">
     <fieldset>
         <h1>BugsList</h1>
+        <p>Bug Description</p>
+        <textarea rows="4" cols="50"></textarea>
+
         <table>
             <tr>
                 <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
