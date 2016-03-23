@@ -38,8 +38,8 @@ include("submit.php");
                      </div>
                  </td>
                  <td>
-                     <textarea name="bugdesc" rows="5" columns="20" />
-<!--                     <input name="bugdesc" type="text" class="input" size="20" required />-->
+                     <textarea name="bugdesc" rows="5" columns="20"></textarea>
+
                  </td>
              </tr>
             <tr>
