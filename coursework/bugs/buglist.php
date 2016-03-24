@@ -16,9 +16,12 @@ if(isset($_POST["submit"]))
     $sql="SELECT *FROM bugs";
     $result=mysqli_query($db,$sql);
     $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
+    $bugtitle = $row['title'];
+    $bugID = $row['ID'];
+    echo '<a href="bug.php?id="'.$bugID.'>'.$bugtitle.'</a></br>';
     $query = mysqli_query($db, "INSERT INTO bugs (bugID, title, desc, postDate, fixDate, fixed, userID)
 VALUES ('2', '$bugtitle', '$bugdesc', '$postdate', '$postdate' , NULL, '123')")or die(mysqli_error($db));
-    ;
+    
 
     if($query)
     {
