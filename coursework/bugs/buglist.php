@@ -7,9 +7,9 @@ if(isset($_POST["submit"]))
     $bugdesc = $_POST["bugdesc"];
     //$useriId = $_POST["userID"];
     //$postdate = strtotime("july 28 2014");
-   // $postdate = $_POSTdate ["Y"];
+    $postdate = $_POSTdate ['YYYY-MM-DD'];
     // $postdate = strftime("%b %d, %Y", strtotime($row["postdate"]));
-    $postdate = $row["postdate"];
+    //$postdate = $row["postdate"];
 
     $bugtitle= mysqli_real_escape_string($db, $bugtitle);
     $bugdesc = mysqli_real_escape_string($db, $bugdesc);
