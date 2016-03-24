@@ -33,13 +33,22 @@ include("buglist.php");
                         </td>
                     </tr>
                     <tr>
+                    <tr>
+                        <td height="23"></td>
+                        <td>
+                            <div align="left">
+
+                                <a href="coursework/bugs/comments.php">Back</a>
+
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
                         <td height="23"></td>
                         <td>
                             <div align="right">
                                 <input type="submit" name="submit" value="BugRegister" />
-
-
-
 
                             </div>
                         </td>
