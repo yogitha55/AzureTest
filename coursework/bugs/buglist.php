@@ -22,7 +22,7 @@ if(isset($_POST["submit"]))
 
       $bug_id=$row['bugID'];
 
-      $query = mysqli_query($db, "INSERT INTO comments (`commentID`, desc`, `userID`, `postDate`, `bugID`) VALUES ( default, '$comment', '$userid', NULL, '$bug_id' )")or die(mysqli_error($db));
+      $query = mysqli_query($db, "INSERT INTO comments (`commentID`,`desc`, `userID`, `postDate`, `bugID`) VALUES ( default, '$comment', '$userid', NULL, '$bug_id' )")or die(mysqli_error($db));
 
 
     if($query)
