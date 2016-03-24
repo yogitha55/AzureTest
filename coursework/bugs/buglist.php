@@ -18,7 +18,7 @@ if(isset($_POST["submit"]))
     // $postdate = strftime("%b %d, %Y", strtotime($row["postdate"]));
     //$postdate = $row["postdate"];
 
-   // $bugId = mysqli_real_escape_string($db, $bugId);
+    $bugId = mysqli_real_escape_string($db, $bugId);
     $bugtitle= mysqli_real_escape_string($db, $bugtitle);
     $bugdesc = mysqli_real_escape_string($db, $bugdesc);
  //  $postdate = mysqli_real_escape_string($db, $postdate);
