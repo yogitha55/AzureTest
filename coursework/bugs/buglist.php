@@ -19,8 +19,8 @@ if(isset($_POST["submit"]))
     $bugtitle = $row['title'];
     $bugID = $row['ID'];
 
-    $query = mysqli_query($db, "INSERT INTO `bugs` ('bugID', 'title', 'desc', 'postDate', 'fixDate', 'fixed', 'userID')
-VALUES ('$value', '$value 1', '$value 2', '$value 3',  '$value 4', '$value 5', '$value 6')")or die(mysqli_error($db));
+    $query = mysqli_query($db, "INSERT INTO `bugs`(bugID, title, desc, postDate, fixDate, fixed, userID)
+VALUES ('2', '$bugtitle', '$bugdesc', '$postdate', '$postdate', NULL, '123')")or die(mysqli_error($db));
 
 
     if($query)
