@@ -25,10 +25,7 @@ if(isset($_POST["submit"]))
     $fixdate = mysqli_real_escape_string($db, $fixdate);
     $fixed = mysqli_real_escape_string($db, $fixed);
     $userId = mysqli_real_escape_string($db, $userId);
-    $datetest = '24/10/2012';
-    $datetime = date("Y-m-d", strtotime($datetest));
-    $insertbday = new DateTime($datetest);
-    $insertbday = date( 'Y-m-d H:i:s', $insertbday);
+    
 
        echo $bugtitle;
 
