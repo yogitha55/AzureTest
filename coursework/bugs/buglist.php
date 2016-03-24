@@ -3,7 +3,7 @@
 $msg = "";
 if(isset($_POST["submit"]))
 {
-    $bugId = $_POST["bugId"];
+    $column1 = $_POST["bugId"];
     $bugtitle = $_POST["bugtitle"];
     $bugdesc = $_POST["bugdesc"];
     //$postdate = strtotime("july 28 2014");
@@ -34,8 +34,8 @@ if(isset($_POST["submit"]))
     $bugtitle = $row['title'];
     $bugID = $row['ID'];*/
 
-    $query = mysqli_query($db, "INSERT INTO bugs (`bugID`, `title`, `desc`, `postDate`, `fixDate`, `fixed`, `userID`)
-VALUES ('$bugId', '$bugtitle', '$bugdesc', '$postdate', '$fixdate' , '$fixed', '$userId')")or die(mysqli_error($db));
+    $query = mysqli_query($db, "INSERT INTO bugs (`column1`, `title`, `desc`, `postDate`, `fixDate`, `fixed`, `userID`)
+VALUES ('$column1', '$bugtitle', '$bugdesc', '$postdate', '$fixdate' , '$fixed', '$userId')")or die(mysqli_error($db));
 
 
 
