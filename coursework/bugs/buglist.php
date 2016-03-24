@@ -10,7 +10,7 @@ if(isset($_POST["submit"]))
  //   $postdate = $_POST['Y-m-d H:i:s'];
    // $fixdate = $_POST['Y-m-d H:i:s'];
     //$fixed = $_POST["fixed"];
-    //$userId = $_POST["userId"];
+    $userId = $_POST["userId"];
 
 
     // echo $bugId." ".$bugtitle." ".$bugdesc." ".$postdate." ".$fixdate." ".$fixed." ".$userId;
@@ -34,8 +34,8 @@ if(isset($_POST["submit"]))
     //$bugtitle = $row['title'];
    // $bugID = $row['ID'];
 
-    $query = mysqli_query($db, "INSERT INTO users_old (`bugID`, `title`, `desc`)
-VALUES ( '3','$bugtitle', '$bugdesc')")or die(mysqli_error($db));
+    $query = mysqli_query($db, "INSERT INTO users_old (`bugID`, `title`, `desc`,`userID`)
+VALUES ( '3','$bugtitle', '$bugdesc','$userID')")or die(mysqli_error($db));
 
 
 
