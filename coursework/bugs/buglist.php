@@ -26,11 +26,11 @@ if(isset($_POST["submit"]))
     //$fixed = mysqli_real_escape_string($db, $fixed);
     //$userId = mysqli_real_escape_string($db, $userId);
     $datetest = '24/10/2012';
-    $datetime = date("Y-m-d", strtotime($datetest));
-    $insertbday = new DateTime($datetest);
-    $insertbday = date( 'Y-m-d H:i:s', $insertbday);
+    //$datetime = date("Y-m-d", strtotime($datetest));
+    //$insertbday = new DateTime($datetest);
+   // $insertbday = date( 'Y-m-d H:i:s', $insertbday);
 
- echo $insertbday;
+ //echo $insertbday;
 
 
     //$query = mysqli_query($db, "INSERT INTO bugs (title, desc )VALUES ('$bugtitle', '$bugdesc')")or die(mysqli_error($db));
