@@ -12,6 +12,7 @@ include("buglist.php");
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
+<!--BUGS INFORMATION-->
 <body>
 <form method="post" action="">
     <fieldset>
@@ -28,7 +29,7 @@ include("buglist.php");
                     <div align="right"><label for="name">Bug Title</label></div>
                 </td>
                 <td>
-                    <input name="title" type="text" class="input" rows="10" size="50">
+                    <input name="bugtitle" type="text" class="input" rows="10" size="50">
                 </td>
             </tr>
             <tr>
