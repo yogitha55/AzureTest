@@ -28,13 +28,13 @@ if(isset($_POST["submit"]))
 
 
     //$query = mysqli_query($db, "INSERT INTO bugs (title, desc )VALUES ('$bugtitle', '$bugdesc')")or die(mysqli_error($db));
-   /* $sql="SELECT *FROM bugs";
+    $sql="SELECT *FROM bugs";
     $result=mysqli_query($db,$sql);
     $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
     $bugtitle = $row['title'];
-    $bugID = $row['ID'];*/
+    $bugID = $row['ID'];
 
-    $query = mysqli_query($db, "INSERT INTO `bugs` (`bugID`, `title`, `desc`, `postDate`, `fixDate`, `fixed`, `userID`)
+    $query = mysqli_query($db, "INSERT INTO bugs (`bugID`, `title`, `desc`, `postDate`, `fixDate`, `fixed`, `userID`)
 VALUES ('$bugId', '$bugtitle', '$bugdesc', '$postdate', '$fixdate' , '$fixed', '$userId')")or die(mysqli_error($db));
 
 
