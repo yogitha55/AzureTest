@@ -87,7 +87,7 @@ include("buglist.php");
                     <div align="right"><label for="userId">User Id</label></div>
                 </td>
                 <td>
-                    <input name="userId" type="number" class="input" size="8" >
+                    <input name="userId" type="number" class="input" size="8" value=$login_user>
                 </td>
             </tr>
 
