@@ -74,24 +74,16 @@ include("buglist.php");
                     </td>
 
                     </tr>
-                <tr>
+
                 <tr>
                     <td height="23"></td>
                     <td>
                         <div align="left">
-
-                            <a href="bugs/bugs.php">Back</a>
-
-
+                            <a href="bugs.php">Back</a>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td height="23"></td>
-                    <td>
                         <div align="right">
 
-                            <a href="bugs/attachments.php">Attachments</a>
+                            <a href="attachments.php">Attachments</a>
 
 
                         </div>

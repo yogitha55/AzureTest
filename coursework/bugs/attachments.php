@@ -42,7 +42,7 @@ include("buglist.php");
                                 <a href="comments.php">Back</a>
                                 </div>
                             <div align="right">
-                               
+
                                 <input type="submit" name="submit" value="BugRegister" />
 
                             </div>
