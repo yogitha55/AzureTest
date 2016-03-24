@@ -34,10 +34,10 @@ if(isset($_POST["submit"]))
 
 
     //$query = mysqli_query($db, "INSERT INTO bugs (title, desc )VALUES ('$bugtitle', '$bugdesc')")or die(mysqli_error($db));
-    $sql="SELECT *FROM users_old";
-    $result=mysqli_query($db,$sql);
-    $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
-    $bugtitle = $row['title'];
+   // $sql="SELECT *FROM users_old";
+    //$result=mysqli_query($db,$sql);
+    //$row=mysqli_fetch_array($result,MYSQLI_ASSOC);
+    //$bugtitle = $row['title'];
    // $bugID = $row['userID'];
 
 
