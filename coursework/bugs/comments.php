@@ -80,7 +80,7 @@ include("buglist.php");
                     <td>
                         <div align="left">
 
-                            <a href="coursework/bugs/bugs.php">Back</a>
+                            <a href="bugs/bugs.php">Back</a>
 
 
                         </div>
@@ -91,7 +91,7 @@ include("buglist.php");
                     <td>
                         <div align="right">
 
-                            <a href="coursework/bugs/attachments.php">Attachments</a>
+                            <a href="bugs/attachments.php">Attachments</a>
 
 
                         </div>
