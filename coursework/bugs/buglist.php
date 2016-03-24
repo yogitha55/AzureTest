@@ -13,7 +13,9 @@ if(isset($_POST["submit"]))
     $bugdesc = mysqli_real_escape_string($db, $bugdesc);
 
     //$query = mysqli_query($db, "INSERT INTO bugs (title, desc )VALUES ('$bugtitle', '$bugdesc')")or die(mysqli_error($db));
-
+    $sql="SELECT *FROM bugs";
+    $result=mysqli_query($db,$sql);
+    $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
     $query = mysqli_query($db, "INSERT INTO bugs (bugID, title, desc, postDate, fixDate, fixed, userID)
 VALUES ('2', '$bugtitle', '$bugdesc', '$postdate', '$postdate' , NULL, '123')")or die(mysqli_error($db));
     ;
