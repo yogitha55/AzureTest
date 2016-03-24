@@ -25,9 +25,9 @@ if(isset($_POST["submit"]))
     $fixdate = mysqli_real_escape_string($db, $fixdate);
     $fixed = mysqli_real_escape_string($db, $fixed);
     $userId = mysqli_real_escape_string($db, $userId);
-    
 
-       echo $bugtitle;
+
+        $bugtitle = 'test123';
 
 
     //$query = mysqli_query($db, "INSERT INTO bugs (title, desc )VALUES ('$bugtitle', '$bugdesc')")or die(mysqli_error($db));
