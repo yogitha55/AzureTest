@@ -23,6 +23,14 @@ include("buglist.php");
             <tr>
                 <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
             </tr>
+            <tr>
+                <td style="font-weight: bold">
+                    <div align="right"><label for="bugId">Bug Id</label></div>
+                </td>
+                <td>
+                    <input name="budId" type="number" class="input" size="8" >
+                </td>
+            </tr>
 
             <tr>
                 <td style="font-weight: bold">
@@ -43,22 +51,7 @@ include("buglist.php");
 
                 </td>
             </tr>
-            <tr>
-                <td style="font-weight: bold">
-                    <div align="right"><label for="userId">User Id</label></div>
-                </td>
-                <td>
-                    <input name="userId" type="number" class="input" size="8" >
-                </td>
-            </tr>
-            <tr>
-                <td style="font-weight: bold">
-                    <div align="right"><label for="bugId">Bug Id</label></div>
-                </td>
-                <td>
-                    <input name="budId" type="number" class="input" size="8" >
-                </td>
-            </tr>
+
             <tr>
                 <td style="font-weight: bold">
                     <div align="right">
@@ -89,6 +82,15 @@ include("buglist.php");
                     <input name="fixed" type="number" class="input" size="8" >
                 </td>
             </tr>
+            <tr>
+                <td style="font-weight: bold">
+                    <div align="right"><label for="userId">User Id</label></div>
+                </td>
+                <td>
+                    <input name="userId" type="number" class="input" size="8" >
+                </td>
+            </tr>
+
 
         </table>
         <section>
