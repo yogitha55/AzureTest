@@ -87,7 +87,7 @@ include("check.php");
                     <div align="right"><label for="userId">User Id</label></div>
                 </td>
                 <td>
-                    <input name="userId" type="number" class="input" size="8" value="<?php echo $login_user;?>">
+                    <input name="userId" type="number" modifiable="false" class="input" size="8" value="<?php echo $login_user;?>">
                 </td>
             </tr>
 
@@ -115,7 +115,7 @@ include("check.php");
                         </div>
                     </td>
                     <td>
-                        <input name="userId" type="int" class="input" size="8" >
+                        <input name="userId" type="number" class="input" size="8" value="<?php echo $login_user;?>">
 
                     </td>
 
