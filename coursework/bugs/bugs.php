@@ -28,7 +28,7 @@ include("buglist.php");
                     <div align="right"><label for="bugId">Bug Id</label></div>
                 </td>
                 <td>
-                    <input name="budId" type="number" class="input" size="8" >
+                    <input name="budId" type="number" class="input" size="11" >
                 </td>
             </tr>
 
