@@ -95,7 +95,7 @@ include("buglist.php");
                         <td>
                             <div align="right">
 
-                         <a href="coursework/bugs/comments.php">Comments</a>
+                         <a href="bugs/comments.php">Comments</a>
 
 
                             </div>
