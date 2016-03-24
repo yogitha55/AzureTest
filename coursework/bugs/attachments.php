@@ -38,9 +38,11 @@ include("buglist.php");
                     <tr>
                         <td height="23"></td>
                         <td>
+                            <div align="left">
+                                <a href="comments.php">Back</a>
+                                </div>
                             <div align="right">
-                              <!--  <a href="comments.php">Back</a><br> -->
-                                <a href="#" onClick="history.go(-1);return true;">Send Me Back A Page!</a>
+                               <a href="comments.php">Back</a>
                                 <input type="submit" name="submit" value="BugRegister" />
 
                             </div>
