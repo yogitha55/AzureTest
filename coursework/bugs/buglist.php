@@ -3,7 +3,7 @@
 $msg = "";
 if(isset($_POST["submit"]))
 {
-    $column1 = $_POST["bugId"];
+    $bugId = $_POST["bugId"];
     $bugtitle = $_POST["bugtitle"];
     $bugdesc = $_POST["bugdesc"];
     //$postdate = strtotime("july 28 2014");
