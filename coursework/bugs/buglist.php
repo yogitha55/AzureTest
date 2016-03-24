@@ -27,7 +27,7 @@ if(isset($_POST["submit"]))
 
     if($query)
     {
-        $msg = "Thank You! Bug is .";
+     header('Location: http://yogitha.azurewebsites.net/coursework/bugs/bugsuccess.php');
     }
 
 
