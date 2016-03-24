@@ -72,6 +72,30 @@ include("buglist.php");
                         <input name="commentId" type="number" class="input" size="8" >
 
                     </td>
+
+                    </tr>
+                <tr>
+                <tr>
+                    <td height="23"></td>
+                    <td>
+                        <div align="left">
+
+                            <a href="coursework/bugs/bugs.php">Back</a>
+
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="23"></td>
+                    <td>
+                        <div align="right">
+
+                            <a href="coursework/bugs/attachments.php">Attachments</a>
+
+
+                        </div>
+                    </td>
                 </tr>
 
             </table>
