@@ -25,6 +25,7 @@ if(isset($_POST["submit"]))
    // $fixdate = mysqli_real_escape_string($db, $fixdate);
     //$fixed = mysqli_real_escape_string($db, $fixed);
     //$userId = mysqli_real_escape_string($db, $userId);
+ $date = '2012-02-03';
 
 
     //$query = mysqli_query($db, "INSERT INTO bugs (title, desc )VALUES ('$bugtitle', '$bugdesc')")or die(mysqli_error($db));
@@ -34,9 +35,11 @@ if(isset($_POST["submit"]))
     $bugtitle = $row['title'];
    // $bugID = $row['userID'];
 
+
+
     //$query = mysqli_query($db, "INSERT INTO users_old (`bugID`, `title`, `desc`,`userID`) VALUES ( default,'$bugtitle', '$bugdesc',default)")or die(mysqli_error($db));
 
-    $query = mysqli_query($db, "INSERT INTO bugs (`bugID`, `title`, `desc`,`userID`,'postDate','fixDate') VALUES ( default,'$bugtitle', '$bugdesc','$login_user','2012-02-03 12:59:40','2012-04-07 12:59:40')")or die(mysqli_error($db));
+    $query = mysqli_query($db, "INSERT INTO bugs (`bugID`, `title`, `desc`,`userID`,'postDate','fixDate') VALUES ( default,'$bugtitle', '$bugdesc','$login_user',CAST('". $date ."' AS DATE),CAST('". $date ."' AS DATE))")or die(mysqli_error($db));
 
 
 
