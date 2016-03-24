@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<h1 class="hello">Hello, <em><?php echo $login_user;?>!</em></h1>
+<h1 class="hello">Bug registration successful, <em><?php echo $login_user;?>!</em></h1>
 <br><br><br>
 <tr>
 	<td colspan="2">Bugs</td>
