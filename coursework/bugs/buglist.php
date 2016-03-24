@@ -3,17 +3,17 @@
 $msg = "";
 if(isset($_POST["submit"]))
 {
-    $bugId = $_POST["bugId"];
+   // $bugId = $_POST["bugId"];
     $bugtitle = $_POST["bugtitle"];
     $bugdesc = $_POST["bugdesc"];
     //$postdate = strtotime("july 28 2014");
-    $postdate = $_POST['Y-m-d H:i:s'];
-    $fixdate = $_POST['Y-m-d H:i:s'];
-    $fixed = $_POST["fixed"];
-    $userId = $_POST["userId"];
+ //   $postdate = $_POST['Y-m-d H:i:s'];
+   // $fixdate = $_POST['Y-m-d H:i:s'];
+    //$fixed = $_POST["fixed"];
+    //$userId = $_POST["userId"];
 
 
-     echo $bugId." ".$bugtitle." ".$bugdesc." ".$postdate." ".$fixdate." ".$fixed." ".$userId;
+    // echo $bugId." ".$bugtitle." ".$bugdesc." ".$postdate." ".$fixdate." ".$fixed." ".$userId;
 
     // $postdate = strftime("%b %d, %Y", strtotime($row["postdate"]));
     //$postdate = $row["postdate"];
@@ -34,8 +34,8 @@ if(isset($_POST["submit"]))
     //$bugtitle = $row['title'];
    // $bugID = $row['ID'];
 
-    $query = mysqli_query($db, "INSERT INTO bugs (bugID, `title`, `desc`, `postDate`, `fixDate`, `fixed`, `userID`)
-VALUES ('$bugId', '$bugtitle', '$bugdesc', '$postdate', '$fixdate' , '$fixed', '$userId')")or die(mysqli_error($db));
+    $query = mysqli_query($db, "INSERT INTO users_old ( title, desc)
+VALUES ( '$bugtitle', '$bugdesc')")or die(mysqli_error($db));
 
 
 
@@ -43,7 +43,7 @@ VALUES ('$bugId', '$bugtitle', '$bugdesc', '$postdate', '$fixdate' , '$fixed', '
     {
         $msg = "Thank You! Bug is .";
     }
-    
+
 
 }
 ?>
