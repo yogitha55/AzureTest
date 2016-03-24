@@ -10,7 +10,7 @@ if(isset($_POST["submit"]))
     $postdate = $_POST['Y-m-d H:i:s'];
     $fixdate = $_POST['Y-m-d H:i:s'];
     $fixed = $_POST["fixed"];
-    $useriId = $_POST["userId"];
+    $userId = $_POST["userId"];
 
 
 
