@@ -41,7 +41,7 @@ VALUES ('$bugId', '$bugtitle', '$bugdesc', '$postdate', '$fixdate' , '$fixed', '
 
     if($query)
     {
-        $msg = "Thank You! Bug is registered.";
+        $msg = "Thank You! Bug is .";
     }
 
 }
