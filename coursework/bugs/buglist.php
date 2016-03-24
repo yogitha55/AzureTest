@@ -18,13 +18,13 @@ if(isset($_POST["submit"]))
     // $postdate = strftime("%b %d, %Y", strtotime($row["postdate"]));
     //$postdate = $row["postdate"];
 
-    $bugId = mysqli_real_escape_string($db, $bugId);
+   // $bugId = mysqli_real_escape_string($db, $bugId);
     $bugtitle= mysqli_real_escape_string($db, $bugtitle);
     $bugdesc = mysqli_real_escape_string($db, $bugdesc);
     $postdate = mysqli_real_escape_string($db, $postdate);
     $fixdate = mysqli_real_escape_string($db, $fixdate);
     $fixed = mysqli_real_escape_string($db, $fixed);
-    $userId = mysqli_real_escape_string($db, $userId);
+    //$userId = mysqli_real_escape_string($db, $userId);
 
 
     //$query = mysqli_query($db, "INSERT INTO bugs (title, desc )VALUES ('$bugtitle', '$bugdesc')")or die(mysqli_error($db));
@@ -35,7 +35,7 @@ if(isset($_POST["submit"]))
     $bugID = $row['ID'];*/
 
     $query = mysqli_query($db, "INSERT INTO bugs (`bugID`, `title`, `desc`, `postDate`, `fixDate`, `fixed`, `userID`)
-VALUES ('bugId', '$bugtitle', '$bugdesc', '$postdate', '$fixdate' , 'fixed', 'userId')")or die(mysqli_error($db));
+VALUES ('$bugId', '$bugtitle', '$bugdesc', '$postdate', '$fixdate' , '$fixed', '$userId')")or die(mysqli_error($db));
 
 
 
