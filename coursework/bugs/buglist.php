@@ -19,8 +19,8 @@ if(isset($_POST["submit"]))
     //$postdate = $row["postdate"];
 
    // $bugId = mysqli_real_escape_string($db, $bugId);
-    $bugtitle= mysqli_real_escape_string($db, $bugtitle);
-    $bugdesc = mysqli_real_escape_string($db, $bugdesc);
+     $bugtitle= mysqli_real_escape_string($db, $bugtitle);
+     $bugdesc = mysqli_real_escape_string($db, $bugdesc);
  //  $postdate = mysqli_real_escape_string($db, $postdate);
    // $fixdate = mysqli_real_escape_string($db, $fixdate);
     //$fixed = mysqli_real_escape_string($db, $fixed);
@@ -30,7 +30,7 @@ if(isset($_POST["submit"]))
     //$insertbday = new DateTime($datetest);
    // $insertbday = date( 'Y-m-d H:i:s', $insertbday);
 
- //echo $insertbday;
+      echo $bugtitle;
 
 
     //$query = mysqli_query($db, "INSERT INTO bugs (title, desc )VALUES ('$bugtitle', '$bugdesc')")or die(mysqli_error($db));
