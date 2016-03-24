@@ -30,6 +30,8 @@ if(isset($_POST["submit"]))
     $insertbday = new DateTime($datetest);
  $insertbday = date( 'Y-m-d H:i:s', $insertbday);
 
+ echo $insertbday;
+
 
     //$query = mysqli_query($db, "INSERT INTO bugs (title, desc )VALUES ('$bugtitle', '$bugdesc')")or die(mysqli_error($db));
     $sql="SELECT *FROM users_old";
