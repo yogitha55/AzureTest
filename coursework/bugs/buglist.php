@@ -25,8 +25,8 @@ if(isset($_POST["submit"]))
    // $fixdate = mysqli_real_escape_string($db, $fixdate);
     //$fixed = mysqli_real_escape_string($db, $fixed);
     //$userId = mysqli_real_escape_string($db, $userId);
-    $datenow = '13-03-2012';
-    $datetime = date("d-m-y", strtotime($datenow));
+    $datetest = '24/10/2012';
+    $datetime = date("Y-m-d", strtotime($datetest));
 
 
     //$query = mysqli_query($db, "INSERT INTO bugs (title, desc )VALUES ('$bugtitle', '$bugdesc')")or die(mysqli_error($db));
