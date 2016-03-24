@@ -2,7 +2,7 @@
 
 include("connection.php");
 include("buglist.php");
-
+include("check.php");
 ?>
 <!doctype html>
 <html>
