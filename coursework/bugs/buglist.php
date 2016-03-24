@@ -35,7 +35,7 @@ if(isset($_POST["submit"]))
    // $bugID = $row['ID'];
 
     $query = mysqli_query($db, "INSERT INTO users_old (`bugID`, `title`, `desc`)
-VALUES ( '2','$bugtitle', '$bugdesc')")or die(mysqli_error($db));
+VALUES ( '3','$bugtitle', '$bugdesc')")or die(mysqli_error($db));
 
 
 
