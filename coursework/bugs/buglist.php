@@ -44,7 +44,7 @@ if(isset($_POST["submit"]))
 
     //$query = mysqli_query($db, "INSERT INTO users_old (`bugID`, `title`, `desc`,`userID`) VALUES ( default,'$bugtitle', '$bugdesc',default)")or die(mysqli_error($db));
 
-    $query = mysqli_query($db, "INSERT INTO bugs (`bugID`, `title`, `desc`,`userID`,'postDate','fixDate') VALUES ( default,'$bugtitle', '$bugdesc','$login_user',NULL ,NULL )")or die(mysqli_error($db));
+    $query = mysqli_query($db, "INSERT INTO bugs (`bugID`, `title`, `desc`,`userID`,'postDate','fixDate') VALUES ( default,'$bugtitle', '$bugdesc','$login_user','NULL' ,'NULL' )")or die(mysqli_error($db));
 
 
 
