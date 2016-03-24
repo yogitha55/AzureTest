@@ -115,7 +115,7 @@ include("check.php");
                         </div>
                     </td>
                     <td>
-                        <input name="userId" type="number" readonly="true" class="input" size="8" value="<?php echo $login_user;?>">
+                        <input name="userId" type="number" readonly class="input" size="8" value="<?php echo $login_user;?>">
 
                     </td>
 
