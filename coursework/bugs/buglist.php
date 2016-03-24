@@ -28,6 +28,7 @@ if(isset($_POST["submit"]))
 
        if($bugtitle == null)
        {
+          echo $bugtitle;
           $bugtitle = 'test123';
        }
 
