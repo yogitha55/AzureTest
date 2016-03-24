@@ -34,20 +34,12 @@ include("buglist.php");
                     </tr>
                     <tr>
                     <tr>
-                        <td height="23"></td>
-                        <td>
-                            <div align="left">
 
-                             <a href="yogitha.azurewebsites.net/coursework/bugs/comments.php">Back</a>
-
-
-                            </div>
-                        </td>
-                    </tr>
                     <tr>
                         <td height="23"></td>
                         <td>
                             <div align="right">
+                                <a href="comments.php">Back</a><br>
                                 <input type="submit" name="submit" value="BugRegister" />
 
                             </div>
