@@ -28,7 +28,7 @@ include("buglist.php");
                     <div align="right"><label for="name">Bug Title</label></div>
                 </td>
                 <td>
-                    <input name="title" type="text" class="input" rows="10" size="50"required />
+                    <input name="title" type="text" class="input" rows="10" size="50">
                 </td>
             </tr>
             <tr>
@@ -47,7 +47,7 @@ include("buglist.php");
                     <div align="right"><label for="userId">User Id</label></div>
                 </td>
                 <td>
-                    <input name="userId" type="number" class="input" size="8" required />
+                    <input name="userId" type="number" class="input" size="8" >
                 </td>
             </tr>
             <tr>
@@ -55,7 +55,7 @@ include("buglist.php");
                     <div align="right"><label for="bugId">Bug Id</label></div>
                 </td>
                 <td>
-                    <input name="budId" type="number" class="input" size="8" required />
+                    <input name="budId" type="number" class="input" size="8" >
                 </td>
             </tr>
             <tr>
@@ -65,7 +65,7 @@ include("buglist.php");
                     </div>
                 </td>
                 <td>
-                    <input name="postdate" type="datetime-local" class="input" size="8" required />
+                    <input name="postdate" type="datetime-local" class="input" size="8" >
                 </td>
             </tr>
             <tr>
@@ -75,7 +75,7 @@ include("buglist.php");
                     </div>
                 </td>
                 <td>
-                    <input name="fixdate" type="datetime-local" class="input" size="8" required />
+                    <input name="fixdate" type="datetime-local" class="input" size="8">
                 </td>
             </tr>
             <tr>
@@ -85,7 +85,7 @@ include("buglist.php");
                     </div>
                 </td>
                 <td>
-                    <input name="fixed" type="number" class="input" size="8" required />
+                    <input name="fixed" type="number" class="input" size="8" >
                 </td>
             </tr>
 
@@ -112,7 +112,7 @@ include("buglist.php");
                         </div>
                     </td>
                     <td>
-                        <input name="userId" type="int" class="input" size="8" required />
+                        <input name="userId" type="int" class="input" size="8" >
 
                     </td>
 
@@ -123,7 +123,7 @@ include("buglist.php");
                     </div>
                 </td>
                 <td>
-                    <input name="bugId" type="number" class="input" size="8" required />
+                    <input name="bugId" type="number" class="input" size="8" >
 
                 </td>
                 <tr>
@@ -133,7 +133,7 @@ include("buglist.php");
                         </div>
                     </td>
                     <td>
-                        <input name="dateposted" type="datetime-local" class="input" size="11" required />
+                        <input name="dateposted" type="datetime-local" class="input" size="11" >
 
                     </td>
                 </tr>
@@ -144,7 +144,7 @@ include("buglist.php");
                         </div>
                     </td>
                     <td>
-                        <input name="commentId" type="number" class="input" size="8" required />
+                        <input name="commentId" type="number" class="input" size="8" >
 
                     </td>
                 </tr>
