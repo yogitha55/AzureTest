@@ -25,7 +25,7 @@ if(isset($_POST["submit"]))
    // $fixdate = mysqli_real_escape_string($db, $fixdate);
     //$fixed = mysqli_real_escape_string($db, $fixed);
     //$userId = mysqli_real_escape_string($db, $userId);
-    $datenow = '2012003-03';
+    $datenow = '2012-03-03';
     $datetime = date("yyyy-mm-dd", strtotime($datenow));
 
 
