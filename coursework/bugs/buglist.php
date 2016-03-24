@@ -5,7 +5,7 @@ if(isset($_POST["submit"]))
 {
     $bugtitle = $_POST["bugtitle"];
     $bugdesc = $_POST["bugdesc"];
-    $useriId = $_POST["userID"];
+    $useriId = $_POST["userId"];
     //$postdate = strtotime("july 28 2014");
     $postdate = $_POST['Y-m-d H:i:s'];
     $fixdate = $_POST['Y-m-d H:i:s'];
