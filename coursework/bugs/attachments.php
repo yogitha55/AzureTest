@@ -38,7 +38,7 @@ include("buglist.php");
                         <td>
                             <div align="left">
 
-                             <td>  <a href="bugs/comments.php">Back</a></td>
+                             <td>  <a href="coursework/bugs/comments.php">Back</a></td>
 
 
                             </div>
