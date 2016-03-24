@@ -3,9 +3,9 @@
 $msg = "";
 if(isset($_POST["submit"]))
 {
-   $bugId = $_POST["bugId"];
-    $bugtitle = $_POST["bugtitle"];
-    $bugdesc = $_POST["bugdesc"];
+     $bugId = $_POST["bugId"];
+     $bugtitle = $_POST["bugtitle"];
+     $bugdesc = $_POST["bugdesc"];
     //$postdate = strtotime("july 28 2014");
  //   $postdate = $_POST['Y-m-d H:i:s'];
    // $fixdate = $_POST['Y-m-d H:i:s'];
@@ -26,8 +26,11 @@ if(isset($_POST["submit"]))
     $fixed = mysqli_real_escape_string($db, $fixed);
     $userId = mysqli_real_escape_string($db, $userId);*/
 
+       if($bugtitle == null)
+       {
+          $bugtitle = 'test123';
+       }
 
-        $bugtitle = 'test123';
 
 
     //$query = mysqli_query($db, "INSERT INTO bugs (title, desc )VALUES ('$bugtitle', '$bugdesc')")or die(mysqli_error($db));
