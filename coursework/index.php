@@ -30,6 +30,7 @@
         <input type="submit" name="submit" value="Login" /> <br>
         <br>
         <br>
+        <!-- Redirect to register page,,if user is not registred they can click on register button -->
         <a href="registration/register.php">Register</a>
 
     </form>
