@@ -151,9 +151,8 @@ include("check.php");
                 </tr>
 
             </table>
-        </section>
-        <h1>Attachments</h1>
-        <section>
+        
+            <h1>Attachments</h1>
             <table>
                     <tr>
                         <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
