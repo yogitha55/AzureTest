@@ -52,7 +52,7 @@ form {
 }
 table {
 	width: 400px;
-	border: 3px solid;
+	border: 3px solid #003399 ;
 	cellpadding:0;
 	cellspacing:0;
 	padding: 10px;
@@ -62,7 +62,7 @@ body
 	background-color:#dddddd;
 }
 td {
-	height: 40px;
+	height: 30px;
 }
 th, td {
 	padding: 15px;
