@@ -17,8 +17,6 @@ include("check.php");
 <form method="post" action="">
     <fieldset>
         <h1>BugsList</h1>
-
-
         <table>
             <tr>
                 <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
@@ -158,7 +156,6 @@ include("check.php");
             <h1>Attachments</h1>
             <table>
 
-                <table width="400"  border="0" cellpadding="10" cellspacing="10">
                     <tr>
                         <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
                     </tr>
