@@ -14,13 +14,7 @@
 <title>User Login</title>
 <link rel="stylesheet" href="login/style.css" type="text/css" />
 </head>
-<nav>
-    <ul>
 
-        <a href="registration/register.php">Register</a>
-
-    </ul>
-</nav>
 <!-- User Login Form Details-->
 <body>
 <div align="center">
@@ -34,6 +28,8 @@
         <label>Password</label><br>
         <input type="password" name="password" placeholder="password" />  <br><br>
         <input type="submit" name="submit" value="Login" /> <br>
+        <br>
+        <br>
         <a href="registration/register.php">Register</a>
 
     </form>
