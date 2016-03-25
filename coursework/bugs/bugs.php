@@ -90,6 +90,7 @@ include("check.php");
                 </td>
             </tr>
         </table>
+        <section>
           <!-- Comments Fields -->
             <h1>Comments</h1>
             <table>
@@ -111,6 +112,7 @@ include("check.php");
                             <label for="usercommented">User Id</label>
                         </div>
                     </td>
+                    <!--user cannot enter value or text in readonly mode -->
                     <td>
                         <input name="userId" type="number" readonly class="input" size="8" value="<?php echo $login_user;?>">
                     </td>
@@ -146,7 +148,8 @@ include("check.php");
                     </td>
                 </tr>
             </table>
-        <!--attachments fields-->
+            </section>
+            <!--attachments fields-->
             <section>
             <h1>Attachments</h1>
             <table>
@@ -193,6 +196,7 @@ include("check.php");
                 </tr>
                 <br>
                 <br>
+                <!--Bug Register Button -->
                     <tr>
                         <td height="23"></td>
                         <td>
@@ -204,7 +208,7 @@ include("check.php");
                 </table>
                 </section>
 
-    </fieldset>
-</form>
-</body>
-</html>
+             </fieldset>
+            </form>
+        </body>
+      </html>

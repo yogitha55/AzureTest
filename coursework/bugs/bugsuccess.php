@@ -9,7 +9,7 @@
 <title>Home</title>
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
-
+<!--bug registraion succesful -->
 <body>
 <h1 class="hello">Bug registration successful, <em><?php echo $login_user;?>!</em></h1>
 <br><br><br>
@@ -18,7 +18,7 @@
 	<td> <a href="http://yogitha.azurewebsites.net/coursework/bugs/bugs.php">Bugs Home</a> </td>
 </tr><br>
 <br>
-
+<!--redirect to index page -->
 <tr>
 	<td>
 		<a href="logout.php" style="font-size:18px">Logout?</a>

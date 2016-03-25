@@ -2,6 +2,7 @@
 include('connection.php');
 session_start();
 $user_check=$_SESSION['username'];
+//create new session
 
 $ses_sql = mysqli_query($db,"SELECT userID FROM users WHERE username='$user_check' ");
 
