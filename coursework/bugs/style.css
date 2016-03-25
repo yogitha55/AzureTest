@@ -65,9 +65,9 @@ table{
     border-radius: 10px 10px 10px 10px;
 }
 td {
-    height: 30px;
+    height: 25px;
 }
 th, td {
-    padding: 15px;
+    padding: 10px;
     text-align: left;
 }
