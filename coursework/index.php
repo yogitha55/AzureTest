@@ -33,7 +33,9 @@
         <input type="text" name="username" placeholder="username" /><br><br>
         <label>Password</label><br>
         <input type="password" name="password" placeholder="password" />  <br><br>
-        <input type="submit" name="submit" value="Login" /> 
+        <input type="submit" name="submit" value="Login" /> <br>
+        <a href="registration/register.php">Register</a>
+
     </form>
     <div class="error"><?php echo $error;?></div>
 </div>
