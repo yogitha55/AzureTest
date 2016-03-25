@@ -28,7 +28,6 @@
         <label>Password</label><br>
         <input type="password" name="password" placeholder="password" />  <br><br>
         <input type="submit" name="submit" value="Login" /> <br>
-        <br>
         <!-- Redirect to register page,,if user is not registred they can click on register button -->
         <p> Not Registred? Please Register Here</p>
         <a href="registration/register.php">Register</a>
