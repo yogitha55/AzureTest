@@ -12,7 +12,7 @@ include("check.php");
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<!--BUGS INFORMATION-->
+<!--BUGS fields-->
 <body>
 <form method="post" action="">
     <fieldset>
@@ -90,7 +90,7 @@ include("check.php");
                 </td>
             </tr>
         </table>
-
+          <!-- Comments Fields -->
             <h1>Comments</h1>
             <table>
                 <tr>
@@ -146,15 +146,49 @@ include("check.php");
                     </td>
                 </tr>
             </table>
-<body>
-        <form method="post" enctype="multipart/form-data">
-            Select file to upload:
-            <input type="file" name="fileToUpload" id="fileToUpload">
-            <input type="submit" value="Upload File" name="submit">
-        </form>
+        <!--attachments fields-->
+            <section>
+            <h1>Attachments</h1>
+            <table>
+                <tr>
+                        <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
+                    </tr>
+                <tr>
+                    <td style="font-weight: bold">
+                        <div align="right"><label for="name">Attachment Id</label></div>
+                    </td>
+                    <td>
+                       <input name="AttachmentId" type="number" class="input" size="8" required>
 
-</body>
-           <table>
+                    </td>
+                </tr>
+                <tr>
+                        <td style="font-weight: bold">
+                            <div align="right"><label for="name">File Upload</label></div>
+                        </td>
+                        <td>
+                            <input type="file" type="fileToUpload" id="fileToUpload" required>
+                            <input type="submit" value="Upload Image" name="submit">
+                        </td>
+                    </tr>
+                <tr>
+                    <td style="font-weight: bold">
+                        <div align="right"><label for="name">User Id</label></div>
+                    </td>
+                    <td>
+                        <input name="userId" type="number" readonly class="input" size="8" value="<?php echo $login_user;?>">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">
+                        <div align="right"><label for="name">Bug Id</label></div>
+                    </td>
+                    <td>
+                        <input name="bugId" type="number" class="input" size="8" required>
+
+                    </td>
+                </tr>
                 <br>
                 <br>
                     <tr>
@@ -166,7 +200,7 @@ include("check.php");
                         </td>
                     </tr>
                 </table>
-
+                </section>
 
     </fieldset>
 </form>
