@@ -21,7 +21,7 @@
 
 <tr>
 	<td>
-		<a href="/logout.php" style="font-size:18px">Logout?</a>
+		<a href="index.php" style="font-size:18px">Logout?</a>
 	</td>
 </tr>
 
