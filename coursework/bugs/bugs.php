@@ -146,22 +146,15 @@ include("check.php");
                     </td>
                 </tr>
             </table>
+<body>
+        <form method="post" enctype="multipart/form-data">
+            Select file to upload:
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" value="Upload File" name="submit">
+        </form>
 
-
-            <h1>Attachments</h1>
-            <table>
-                <tr>
-                        <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
-                    </tr>
-                    <tr>
-                        <td style="font-weight: bold">
-                            <div align="right"><label for="name">File Upload</label></div>
-                        </td>
-                        <td>
-                            <input type="file" type="fileToUpload" id="fileToUpload" required>
-                            <input type="submit" value="Upload Image" name="submit">
-                        </td>
-                    </tr>
+</body>
+           <table>
                 <br>
                 <br>
                     <tr>
@@ -173,43 +166,7 @@ include("check.php");
                         </td>
                     </tr>
                 </table>
-        <body>
 
-        <form method="post" enctype="multipart/form-data">
-            Select file to upload:
-            <input type="file" name="fileToUpload" id="fileToUpload">
-            <input type="submit" value="Upload File" name="submit">
-        </form>
-
-        <?php
-        if(isset($_POST['upload']) && $_FILES['userfile']['size'] > 0)
-        {
-            $fileName = $_FILES['userfile']['name'];
-            $tmpName  = $_FILES['userfile']['tmp_name'];
-            $fileSize = $_FILES['userfile']['size'];
-            $fileType = $_FILES['userfile']['type'];
-
-            $fp      = fopen($tmpName, 'r');
-            $content = fread($fp, filesize($tmpName));
-            $content = addslashes($content);
-            fclose($fp);
-
-            if(!get_magic_quotes_gpc())
-            {
-                $fileName = addslashes($fileName);
-            }
-
-            include 'connection.php';
-
-            $query = "INSERT INTO upload (name, size, type, content ) ".
-                "VALUES ('$fileName', '$fileSize', '$fileType', '$content')";
-
-
-            echo "<br>File $fileName uploaded<br>";
-        }
-        ?>
-
-        </body>
 
     </fieldset>
 </form>
