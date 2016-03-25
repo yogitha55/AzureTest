@@ -98,7 +98,7 @@ include("check.php");
                 </tr>
                 <tr>
                     <td style="font-weight: bold">
-                        <div align="right"><label for="name">Comment </label></div>
+                        <div align="left"><label for="name">Comment </label></div>
                     </td>
                     <td>
                         <textarea name="comment" rows="5" columns="20" ></textarea>
