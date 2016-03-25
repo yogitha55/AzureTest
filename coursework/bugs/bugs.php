@@ -35,7 +35,7 @@ include("check.php");
                     <div align="right"><label for="name">Bug Title</label></div>
                 </td>
                 <td>
-                    <input name="bugtitle" type="text" class="input" rows="10" size="50" required/>
+                    <input name="bugtitle" type="text" class="input" rows="10" size="50">
                 </td>
             </tr>
 
@@ -46,7 +46,7 @@ include("check.php");
                     </div>
                 </td>
                 <td>
-                    <textarea name="bugdesc" rows="5" columns="20" required/> ></textarea>
+                    <textarea name="bugdesc" rows="5" columns="20" ></textarea>
 
                 </td>
             </tr>
@@ -58,7 +58,7 @@ include("check.php");
                     </div>
                 </td>
                 <td>
-                    <input name="postdate" type="datetime-local" class="input" size="11" required/>
+                    <input name="postdate" type="datetime-local" class="input" size="8" >
                 </td>
             </tr>
             <tr>
@@ -68,7 +68,7 @@ include("check.php");
                     </div>
                 </td>
                 <td>
-                    <input name="fixdate" type="datetime-local" class="input" size="11" required/>
+                    <input name="fixdate" type="datetime-local" class="input" size="8">
                 </td>
             </tr>
             <tr>
@@ -78,7 +78,7 @@ include("check.php");
                     </div>
                 </td>
                 <td>
-                    <input name="fixed" type="number" class="input" size="10" required/>
+                    <input name="fixed" type="number" class="input" size="8" >
                 </td>
             </tr>
             <tr>
@@ -86,7 +86,7 @@ include("check.php");
                     <div align="right"><label for="userId">User Id</label></div>
                 </td>
                 <td>
-                    <input name="userId" type="number" readonly class="input" size="10" value="<?php echo $login_user;?>">
+                    <input name="userId" type="number" readonly class="input" size="8" value="<?php echo $login_user;?>">
                 </td>
             </tr>
         </table>
@@ -102,7 +102,7 @@ include("check.php");
                         <div align="right"><label for="name">Comment </label></div>
                     </td>
                     <td>
-                        <textarea name="comment" rows="5" columns="20" required/>
+                        <textarea name="comment" rows="5" columns="20" ></textarea>
 
                     </td>
                 </tr>
@@ -113,7 +113,7 @@ include("check.php");
                         </div>
                     </td>
                     <td>
-                        <input name="userId" type="number" readonly class="input" size="10" value="<?php echo $login_user;?>">
+                        <input name="userId" type="number" readonly class="input" size="8" value="<?php echo $login_user;?>">
                     </td>
                 </tr>
                 <td style="font-weight: bold">
@@ -122,7 +122,7 @@ include("check.php");
                     </div>
                 </td>
                 <td>
-                    <input name="bugId" type="number" class="input" size="10" required/>
+                    <input name="bugId" type="number" class="input" size="8" >
 
                 </td>
                 <tr>
@@ -132,7 +132,7 @@ include("check.php");
                         </div>
                     </td>
                     <td>
-                        <input name="dateposted" type="datetime-local" class="input" size="11" required/>
+                        <input name="dateposted" type="datetime-local" class="input" size="11" >
 
                     </td>
                 </tr>
@@ -143,7 +143,7 @@ include("check.php");
                         </div>
                     </td>
                     <td>
-                        <input name="commentId" type="number" class="input" size="10" required/>
+                        <input name="commentId" type="number" class="input" size="8" >
                     </td>
                 </tr>
             </table>
@@ -160,7 +160,7 @@ include("check.php");
                             <div align="right"><label for="name">File Upload</label></div>
                         </td>
                         <td>
-                            <input name="fileToUpload" type="file" id="fileToUpload"class="input" >
+                            <input name="fileToUpload" type="file" id="fileToUpload"class="input">
                             <input type="submit" value="Upload File" name="submit">
                         </td>
                     </tr>
