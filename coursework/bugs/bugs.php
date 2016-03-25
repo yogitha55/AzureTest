@@ -88,10 +88,9 @@ include("check.php");
                     <input name="userId" type="number" readonly class="input" size="8" value="<?php echo $login_user;?>">
                 </td>
             </tr>
-
-
         </table>
-         <section>
+
+        <section>
             <h1>Comments</h1>
             <table>
                 <tr>
@@ -114,9 +113,7 @@ include("check.php");
                     </td>
                     <td>
                         <input name="userId" type="number" readonly class="input" size="8" value="<?php echo $login_user;?>">
-
                     </td>
-
                 </tr>
                 <td style="font-weight: bold">
                     <div align="right">
@@ -146,15 +143,15 @@ include("check.php");
                     </td>
                     <td>
                         <input name="commentId" type="number" class="input" size="8" >
-
                     </td>
                 </tr>
-
             </table>
-        
+        </section>
+
+        <section>
             <h1>Attachments</h1>
             <table>
-                    <tr>
+                <tr>
                         <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
                     </tr>
                     <tr>
@@ -173,14 +170,11 @@ include("check.php");
                         <td>
                             <div align="right">
                                 <input type="submit" name="submit" value="BugRegister" />
-
                             </div>
                         </td>
                     </tr>
                 </table>
         </section>
-
-
     </fieldset>
 </form>
 </body>
