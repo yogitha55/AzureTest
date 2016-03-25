@@ -46,7 +46,7 @@ include("check.php");
                     </div>
                 </td>
                 <td>
-                    <textarea name="bugdesc" rows="5" width="400" columns="20" required/> ></textarea>
+                    <textarea name="bugdesc" rows="5" columns="20" required/> ></textarea>
 
                 </td>
             </tr>
