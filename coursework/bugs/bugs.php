@@ -168,20 +168,20 @@ include("check.php");
                             <input type="submit" value="Upload File" name="submit">
                         </td>
                     </tr>
-                    <tr>
-                        <td height="23"></td>
-                        <td>
-                            <div align="right">
-                                <input type="submit" name="submit" value="BugRegister" />
 
-
-
-
-                            </div>
-                        </td>
-                    </tr>
                 </table>
         </section>
+        <table>
+            <tr>
+                <td height="23"></td>
+                <td>
+                    <div align="right">
+                        <input type="submit" name="submit" value="BugRegister" />
+
+                    </div>
+                </td>
+            </tr>
+            </table>
 
 
     </fieldset>
