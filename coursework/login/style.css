@@ -101,7 +101,7 @@ body
 }
 .link:hover
 {
-	background-color: #9688B2;
+	background-color: #003399;
 }
 .inputBox
 {
@@ -110,7 +110,7 @@ body
 }
 .button
 {
-	padding:15px;
+	padding:10px;
 	width:100px;
 	border:0;
 	background-color:#003399;

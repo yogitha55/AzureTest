@@ -27,7 +27,7 @@ if(isset($_POST["submit"]))
 
     if($query)
     {
-     header('Location: http://yogitha.azurewebsites.net/coursework/bugs/bugsuccess.php');
+       header('Location: http://yogitha.azurewebsites.net/coursework/bugs/bugsuccess.php');
     }
 
 
