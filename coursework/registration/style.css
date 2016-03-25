@@ -51,7 +51,7 @@ form {
 	margin: 0 auto;
 }
 table {
-	width: 200px;
+	width: 400px;
 	border: 3px solid;
 	cellpadding:0;
 	cellspacing:0;
@@ -62,5 +62,9 @@ body
 	background-color:#dddddd;
 }
 td {
-	height: 30px;
+	height: 40px;
+}
+th, td {
+	padding: 15px;
+	text-align: left;
 }
