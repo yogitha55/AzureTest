@@ -59,10 +59,7 @@ input[type=submit]
 	font-size:36px;
 	font-family:Arial, Helvetica, sans-serif;
 }
-body {
-	background-image: url("");
-	background-color: #cccccc;
-}
+
 body
 {
 	margin: 0;

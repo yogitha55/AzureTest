@@ -26,7 +26,7 @@ include("check.php");
                     <div align="right"><label for="bugId">Bug Id</label></div>
                 </td>
                 <td>
-                    <input name="budId" type="number" class="input" size="10" required/>
+                    <input name="budId" type="number" class="input" size="10" required>
                 </td>
             </tr>
 
@@ -35,7 +35,7 @@ include("check.php");
                     <div align="right"><label for="name">Bug Title</label></div>
                 </td>
                 <td>
-                    <input name="bugtitle" type="text" class="input" rows="10" size="50">
+                    <input name="bugtitle" type="text" class="input" rows="10" size="50" required>
                 </td>
             </tr>
 
@@ -46,7 +46,7 @@ include("check.php");
                     </div>
                 </td>
                 <td>
-                    <textarea name="bugdesc" rows="5" columns="20" ></textarea>
+                    <textarea name="bugdesc" rows="5" columns="20" required></textarea>
 
                 </td>
             </tr>
@@ -58,7 +58,7 @@ include("check.php");
                     </div>
                 </td>
                 <td>
-                    <input name="postdate" type="datetime-local" class="input" size="8" >
+                    <input name="postdate" type="datetime-local" class="input" size="8" required>
                 </td>
             </tr>
             <tr>
@@ -68,7 +68,7 @@ include("check.php");
                     </div>
                 </td>
                 <td>
-                    <input name="fixdate" type="datetime-local" class="input" size="8">
+                    <input name="fixdate" type="datetime-local" class="input" size="8" required>
                 </td>
             </tr>
             <tr>
@@ -78,7 +78,7 @@ include("check.php");
                     </div>
                 </td>
                 <td>
-                    <input name="fixed" type="number" class="input" size="8" >
+                    <input name="fixed" type="number" class="input" size="8" required >
                 </td>
             </tr>
             <tr>
@@ -102,7 +102,7 @@ include("check.php");
                         <div align="right"><label for="name">Comment </label></div>
                     </td>
                     <td>
-                        <textarea name="comment" rows="5" columns="20" ></textarea>
+                        <textarea name="comment" rows="5" columns="20" required></textarea>
 
                     </td>
                 </tr>
@@ -122,7 +122,7 @@ include("check.php");
                     </div>
                 </td>
                 <td>
-                    <input name="bugId" type="number" class="input" size="8" >
+                    <input name="bugId" type="number" class="input" size="8" required>
 
                 </td>
                 <tr>
@@ -132,7 +132,7 @@ include("check.php");
                         </div>
                     </td>
                     <td>
-                        <input name="dateposted" type="datetime-local" class="input" size="11" >
+                        <input name="dateposted" type="datetime-local" class="input" size="11" required>
 
                     </td>
                 </tr>
@@ -143,7 +143,7 @@ include("check.php");
                         </div>
                     </td>
                     <td>
-                        <input name="commentId" type="number" class="input" size="8" >
+                        <input name="commentId" type="number" class="input" size="8" required>
                     </td>
                 </tr>
             </table>
@@ -160,7 +160,7 @@ include("check.php");
                             <div align="right"><label for="name">File Upload</label></div>
                         </td>
                         <td>
-                            <input name="fileToUpload" type="file" id="fileToUpload"class="input">
+                            <input name="fileToUpload" type="file" id="fileToUpload"class="input" required>
                             <input type="submit" value="Upload File" name="submit">
                         </td>
                     </tr>
