@@ -58,7 +58,7 @@ include("check.php");
                     </div>
                 </td>
                 <td>
-                    <input name="postdate" type="datetime-local" class="input" size="8" required>
+                    <input name="postdate" type="datetime" class="input" size="8" required>
                 </td>
             </tr>
             <tr>
@@ -68,7 +68,7 @@ include("check.php");
                     </div>
                 </td>
                 <td>
-                    <input name="fixdate" type="datetime-local" class="input" size="8" required>
+                    <input name="fixdate" type="datetime" class="input" size="8" required>
                 </td>
             </tr>
             <tr>
@@ -132,7 +132,7 @@ include("check.php");
                         </div>
                     </td>
                     <td>
-                        <input name="dateposted" type="datetime-local" class="input" size="11" required>
+                        <input name="dateposted" type="datetime" class="input" size="11" required>
 
                     </td>
                 </tr>
