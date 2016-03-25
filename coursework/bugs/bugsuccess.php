@@ -14,12 +14,14 @@
 <h1 class="hello">Bug registration successful, <em><?php echo $login_user;?>!</em></h1>
 <br><br><br>
 <tr>
-	<td colspan="2">Bugs</td>
+
 	<td> <a href="http://yogitha.azurewebsites.net/coursework/bugs/bugs.php">Bugs Home</a> </td>
 </tr><br>
+<br>
+
 <tr>
 	<td>
-		<a href="/coursework/index.php" style="font-size:18px">Logout?</a>
+		<a href="/index.php" style="font-size:18px">Logout?</a>
 	</td>
 </tr>
 
