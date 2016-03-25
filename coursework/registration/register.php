@@ -21,7 +21,7 @@
 					<td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
 				</tr>
 				<tr>
-					<td colspan="1">Already Registered?</td>
+					<td colspan="2">Already Registered?</td>
 					<td> <a href="http://yogitha.azurewebsites.net/coursework/index.php">Login Now</a> </td>
 				</tr>
 				<tr>
