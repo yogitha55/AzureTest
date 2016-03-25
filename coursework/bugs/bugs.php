@@ -91,11 +91,10 @@ include("check.php");
             </tr>
         </table>
 
-        <section>
             <h1>Comments</h1>
             <table>
                 <tr>
-                    <td colspan="2" align="left" class="error"><?php echo $msg;?></td>
+                    <td colspan="2" align="right" class="error"><?php echo $msg;?></td>
                 </tr>
                 <tr>
                     <td style="font-weight: bold">
@@ -147,9 +146,8 @@ include("check.php");
                     </td>
                 </tr>
             </table>
-        </section>
 
-        <section>
+
             <h1>Attachments</h1>
             <table>
                 <tr>
@@ -175,7 +173,7 @@ include("check.php");
                         </td>
                     </tr>
                 </table>
-        </section>
+        
     </fieldset>
 </form>
 </body>
