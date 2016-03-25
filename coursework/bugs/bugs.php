@@ -155,7 +155,6 @@ include("check.php");
         <section>
             <h1>Attachments</h1>
             <table>
-
                     <tr>
                         <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
                     </tr>
