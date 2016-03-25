@@ -19,7 +19,7 @@
 </tr><br>
 <tr>
 	<td>
-		<a href="index.php" style="font-size:18px">Logout?</a>
+		<a href="/coursework/index.php" style="font-size:18px">Logout?</a>
 	</td>
 </tr>
 
