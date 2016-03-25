@@ -16,7 +16,7 @@ include("check.php");
 <body>
 <form method="post" action="">
     <fieldset>
-        <h1>BugsList</h1>
+        <h1>Bugs List</h1>
         <table>
             <tr>
                 <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
@@ -158,18 +158,20 @@ include("check.php");
                         <div align="right"><label for="name">Attachment Id</label></div>
                     </td>
                     <td>
-                       <input name="AttachmentId" type="number" class="input" size="8" required>
+                       <input name="attachmentId" type="number" class="input" size="8" required>
 
                     </td>
                 </tr>
                 <tr>
+                    <form method="post" enctype="multipart/form-data">
                         <td style="font-weight: bold">
                             <div align="right"><label for="name">File Upload</label></div>
                         </td>
                         <td>
-                            <input type="file" type="fileToUpload" id="fileToUpload" required>
-                            <input type="submit" value="Upload Image" name="submit">
+                            <input type="file" name="fileToUpload" id="fileToUpload">
+                            <input type="submit" value="Upload File" name="submit">
                         </td>
+                        </form>
                     </tr>
                 <tr>
                     <td style="font-weight: bold">
@@ -195,7 +197,7 @@ include("check.php");
                         <td height="23"></td>
                         <td>
                             <div align="right">
-                                <input type="submit" name="submit" value="BugRegister" />
+                                <input type="submit" name="submit" value="Bug Register" />
                             </div>
                         </td>
                     </tr>
