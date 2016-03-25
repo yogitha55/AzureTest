@@ -35,7 +35,7 @@ include("check.php");
                     <div align="right"><label for="name">Bug Title</label></div>
                 </td>
                 <td>
-                    <input name="bugtitle" type="text" class="input" rows="10" size="50" required>
+                    <input name="bugtitle" type="text" class="input" rows="10" size="50" required/>
                 </td>
             </tr>
 
@@ -78,7 +78,7 @@ include("check.php");
                     </div>
                 </td>
                 <td>
-                    <input name="fixed" type="number" class="input" size="10" required/> >
+                    <input name="fixed" type="number" class="input" size="10" required/>
                 </td>
             </tr>
             <tr>
@@ -160,7 +160,7 @@ include("check.php");
                             <div align="right"><label for="name">File Upload</label></div>
                         </td>
                         <td>
-                            <input name="fileToUpload" type="file" id="fileToUpload"class="input" required/>
+                            <input name="fileToUpload" type="file" id="fileToUpload"class="input" >
                             <input type="submit" value="Upload File" name="submit">
                         </td>
                     </tr>
