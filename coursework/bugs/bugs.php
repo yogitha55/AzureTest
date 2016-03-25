@@ -160,8 +160,8 @@ include("check.php");
                             <div align="right"><label for="name">File Upload</label></div>
                         </td>
                         <td>
-                            <input name="fileToUpload" type="file" id="fileToUpload"class="input" required>
-                            <input type="submit" value="Upload File" name="submit">
+                            <input type="file" type="fileToUpload" id="fileToUpload" required>
+                            <input type="submit" value="Upload Image" name="submit">
                         </td>
                     </tr>
                 <br>
