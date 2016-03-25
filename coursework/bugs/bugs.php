@@ -95,7 +95,7 @@ include("check.php");
             <h1>Comments</h1>
             <table>
                 <tr>
-                    <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
+                    <td colspan="2" align="left" class="error"><?php echo $msg;?></td>
                 </tr>
                 <tr>
                     <td style="font-weight: bold">
