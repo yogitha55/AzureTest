@@ -16,7 +16,7 @@
 	<form method="post" action="">
 		<fieldset>
 		<legend>Registration Form</legend>
-			<table width="400"  border="0" cellpadding="10" cellspacing="10">
+			<table>
 				<tr>
 					<td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
 				</tr>
@@ -24,6 +24,7 @@
 					<td colspan="2">Already Registered?</td>
 					<td> <a href="http://yogitha.azurewebsites.net/coursework/index.php">Login Now</a> </td>
 				</tr>
+				<!--registration fields -->
 				<tr>
 					<td style="font-weight: bold">
 						<div align="right"><label for="userId">UserId</label></div>
@@ -47,7 +48,7 @@
 							</div>
 					</td>
 					<td>
-							<input name="email" type="email" class="input" size="25" required />
+						<input name="email" type="email" class="input" size="25" required />
 					</td>
 				</tr>
 				<tr>
@@ -67,7 +68,7 @@
 							</div>
 					</td>
 					<td>
-							<input name="password" type="password" class="input" size="25" required />
+						<input name="password" type="password" class="input" size="25" required />
 					</td>
 				</tr>
 				<tr>

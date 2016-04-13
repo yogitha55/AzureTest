@@ -1,20 +1,20 @@
 label
 {
-	font-family:"Times New Roman", Times, serif;
+	font-family:Arial, Helvetica, sans-serif;
 	font-size:20px;
 	font-weight:bold;
 }
 .input
 {
 	padding:5px;
-	font-family:"Times New Roman", Times, serif;
+	font-family:Arial, Helvetica, sans-serif;
 	font-size:18px;
 }
 input[type=submit]
 {
-	padding:5px;
-	font-family:"Times New Roman", Times, serif;
-	font-size:23px;
+	padding:10px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
 	font-weight:bold;
 	background:#003399;
 	border:2px solid #dddddd;
@@ -23,7 +23,7 @@ input[type=submit]
 fieldset
 {
 	width: 500px;
-	font-family: "Times New Roman", Times, serif;
+	font-family:Arial, Helvetica, sans-serif;
 	border: 0px solid #dddddd;
 	background: #dddddd;
 	border-radius: 5px;
@@ -32,8 +32,8 @@ fieldset
 fieldset legend
 {
 	padding:5px;
-	font-family:"Times New Roman", Times, serif;
-	font-size:23px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
 	font-weight:bold;
 	background:#003399;
 	color:#FFF;
@@ -41,12 +41,32 @@ fieldset legend
 .error
 {
 	color:red;
-	font-family:"Times New Roman", Times, serif;
+	font-family:Arial, Helvetica, sans-serif;
 	font-size:16px;
 }
 form {
 
 	background-color: #dddddd;
-	width: 700px;
+	width: 500px;
 	margin: 0 auto;
+}
+table {
+	width: 100%;
+	border: 3px solid #003399 ;
+	cellpadding:0;
+	cellspacing:0;
+	padding: 10px;
+	height: 30px;
+	border-radius: 10px 10px 10px 10px;
+}
+body
+{
+	background-color:#dddddd;
+}
+td {
+	height: 30px;
+}
+th, td {
+	padding: 15px;
+	text-align: left;
 }

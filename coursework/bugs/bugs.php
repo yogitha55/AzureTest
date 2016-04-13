@@ -1,8 +1,8 @@
 <?php
 
 include("connection.php");
-include("submit.php");
-
+include("buglist.php");
+include("check.php");
 ?>
 <!doctype html>
 <html>
@@ -12,15 +12,22 @@ include("submit.php");
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
+<!--BUGS fields-->
 <body>
 <form method="post" action="">
     <fieldset>
-        <h1>BugsList</h1>
-
-
+        <h1>Bugs List</h1>
         <table>
             <tr>
                 <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold">
+                    <div align="right"><label for="bugId">Bug Id</label></div>
+                </td>
+                <td>
+                    <input name="budId" type="number" class="input" size="10" required>
+                </td>
             </tr>
 
             <tr>
@@ -28,36 +35,22 @@ include("submit.php");
                     <div align="right"><label for="name">Bug Title</label></div>
                 </td>
                 <td>
-                    <input name="title" type="text" class="input" rows="10" size="50"required />
+                    <input name="bugtitle" type="text" class="input" rows="10" size="50" required>
                 </td>
             </tr>
-             <tr>
-                 <td style="font-weight: bold">
-                     <div align="right">
-                         <label for="bugdescription">Bug Description</label>
-                     </div>
-                 </td>
-                 <td>
-                     <textarea name="bugdesc" rows="5" columns="20" ></textarea>
 
-                 </td>
-             </tr>
             <tr>
                 <td style="font-weight: bold">
-                    <div align="right"><label for="userId">User Id</label></div>
+                    <div align="right">
+                        <label for="bugdescription">Bug Description</label>
+                    </div>
                 </td>
                 <td>
-                    <input name="userId" type="number" class="input" size="8" required />
+                    <textarea name="bugdesc" rows="5" columns="20" required></textarea>
+
                 </td>
             </tr>
-            <tr>
-                <td style="font-weight: bold">
-                    <div align="right"><label for="bugId">Bug Id</label></div>
-                </td>
-                <td>
-                    <input name="budId" type="number" class="input" size="8" required />
-                </td>
-            </tr>
+
             <tr>
                 <td style="font-weight: bold">
                     <div align="right">
@@ -65,7 +58,7 @@ include("submit.php");
                     </div>
                 </td>
                 <td>
-                    <input name="postdate" type="datetime-local" class="input" size="8" required />
+                    <input name="postdate" type="datetime" class="input" size="8" required>
                 </td>
             </tr>
             <tr>
@@ -75,7 +68,7 @@ include("submit.php");
                     </div>
                 </td>
                 <td>
-                    <input name="fixdate" type="datetime-local" class="input" size="8" required />
+                    <input name="fixdate" type="datetime" class="input" size="8" required>
                 </td>
             </tr>
             <tr>
@@ -85,45 +78,52 @@ include("submit.php");
                     </div>
                 </td>
                 <td>
-                    <input name="fixed" type="number" class="input" size="8" required />
+                    <input name="fixed" type="number" class="input" size="8" required >
                 </td>
             </tr>
-
+            <tr>
+                <td style="font-weight: bold">
+                    <div align="right"><label for="userId">User Id</label></div>
+                </td>
+                <td>
+                    <input name="userId" type="number" readonly class="input" size="8" value="<?php echo $login_user;?>">
+                </td>
+            </tr>
         </table>
         <section>
+          <!-- Comments Fields -->
             <h1>Comments</h1>
             <table>
                 <tr>
-                    <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
+                    <td colspan="2" align="right" class="error"><?php echo $msg;?></td>
                 </tr>
-            <tr>
-                <td style="font-weight: bold">
-                    <div align="right"><label for="name">Comment </label></div>
-                </td>
-                <td>
-                    <textarea name="comment" rows="5" columns="20" ></textarea>
+                <tr>
+                    <td style="font-weight: bold">
+                        <div align="right"><label for="name">Comment </label></div>
+                    </td>
+                    <td>
+                        <textarea name="comment" rows="5" columns="20" required></textarea>
 
-                </td>
-            </tr>
-            <tr>
-                <td style="font-weight: bold">
-                    <div align="right">
-                        <label for="usercommented">User Id</label>
-                    </div>
-                </td>
-                <td>
-                    <input name="userId" type="int" class="input" size="8" required />
-
-                </td>
-
-            </tr>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">
+                        <div align="right">
+                            <label for="usercommented">User Id</label>
+                        </div>
+                    </td>
+                    <!--user cannot enter value or text in readonly mode -->
+                    <td>
+                        <input name="userId" type="number" readonly class="input" size="8" value="<?php echo $login_user;?>">
+                    </td>
+                </tr>
                 <td style="font-weight: bold">
                     <div align="right">
                         <label for="bugid">Bug Id</label>
                     </div>
                 </td>
                 <td>
-                    <input name="bugId" type="number" class="input" size="8" required />
+                    <input name="bugId" type="number" class="input" size="8" required>
 
                 </td>
                 <tr>
@@ -133,7 +133,7 @@ include("submit.php");
                         </div>
                     </td>
                     <td>
-                        <input name="dateposted" type="datetime-local" class="input" size="11" required />
+                        <input name="dateposted" type="datetime" class="input" size="11" required>
 
                     </td>
                 </tr>
@@ -144,47 +144,71 @@ include("submit.php");
                         </div>
                     </td>
                     <td>
-                        <input name="commentId" type="number" class="input" size="8" required />
+                        <input name="commentId" type="number" class="input" size="8" required>
+                    </td>
+                </tr>
+            </table>
+            </section>
+            <!--attachments fields-->
+            <section>
+            <h1>Attachments</h1>
+            <table>
+                <tr>
+                        <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
+                    </tr>
+                <tr>
+                    <td style="font-weight: bold">
+                        <div align="right"><label for="name">Attachment Id</label></div>
+                    </td>
+                    <td>
+                       <input name="attachmentId" type="number" class="input" size="8" required>
 
                     </td>
                 </tr>
-
-                </table>
-        </section>
-        <section>
-            <h1>Attachments</h1>
-            <table>
-
-                <table width="400"  border="0" cellpadding="10" cellspacing="10">
-                    <tr>
-                        <td colspan="2" align="centre" class="error"><?php echo $msg;?></td>
-                    </tr>
-                    <tr>
+                <tr>
+                    <form method="post" enctype="multipart/form-data">
                         <td style="font-weight: bold">
                             <div align="right"><label for="name">File Upload</label></div>
                         </td>
                         <td>
-                            <input name="fileToUpload" type="file" id="fileToUpload"class="input">
+                            <input type="file" name="fileToUpload" id="fileToUpload">
                             <input type="submit" value="Upload File" name="submit">
                         </td>
+                        </form>
                     </tr>
+                <tr>
+                    <td style="font-weight: bold">
+                        <div align="right"><label for="name">User Id</label></div>
+                    </td>
+                    <td>
+                        <input name="userId" type="number" readonly class="input" size="8" value="<?php echo $login_user;?>">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold">
+                        <div align="right"><label for="name">Bug Id</label></div>
+                    </td>
+                    <td>
+                        <input name="bugId" type="number" class="input" size="8" required>
+
+                    </td>
+                </tr>
+                <br>
+                <br>
+                <!--Bug Register Button -->
                     <tr>
                         <td height="23"></td>
                         <td>
                             <div align="right">
-                                <input type="submit" name="submit" value="submit" />
-
-
-
-
+                                <input type="submit" name="submit" value="Bug Register" />
                             </div>
                         </td>
                     </tr>
-                    </table>
+                </table>
                 </section>
 
-
-    </fieldset>
-</form>
-</body>
-</html>
+             </fieldset>
+            </form>
+        </body>
+      </html>

@@ -2,16 +2,18 @@
 $msg = "";
 if(isset($_POST["submit"]))
 {
+    // Define $username and $password
     $userid = $_POST["userid"];
     $name = $_POST["name"];
     $email = $_POST["email"];
     $phone = $_POST["phone"];
     $password = $_POST["password"];
 
-    //$userid = mysqli_real_escape_string($db, $userid);
+    // To protect from MySQL injection
+
     $name = mysqli_real_escape_string($db, $name);
     $email = mysqli_real_escape_string($db, $email);
-    //$phone = mysqli_real_escape_string($db, $phone);
+
     $password = mysqli_real_escape_string($db, $password);
     $password = md5($password);
 
