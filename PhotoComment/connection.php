@@ -21,8 +21,8 @@ if ($conn->connect_error) {
 }
 
 // prepare and bind
-$stmt = $conn->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
-$stmt->bind_param("sss", $username, $email, $password);
+$query = $mysqli_query->prepare($db, "INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
+$query->bind_param("sss", $username, $email, $password);
 
 // set parameters and execute
 $username = "Hanu";
