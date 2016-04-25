@@ -28,22 +28,22 @@ $query->bind_param("sss", $username, $email, $password);
 $username = "Hanu";
 $email = "john@example.com";
 $password = "hanu";
-$stmt->execute();
+$query->execute();
 
 $username = "Budugu";
 $email = "budugu@gmail.com";
 $password = "hello";
-$stmt->execute();
+$query->execute();
 
 $username = "Tata";
 $email = "tata@example.com";
 $password = "super";
-$stmt->execute();
+$query->execute();
 
 echo "New records created successfully";
 
-$stmt->close();
-$conn->close();
+$query->close();
+$mysqli_query->close();
 ?>
 
 
