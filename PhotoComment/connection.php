@@ -21,8 +21,10 @@ if ($conn->connect_error) {
 }
 
 // prepare and bind
-$query = $mysqli_query($db, "INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
+$query = $db->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
 $query->bind_param("sss", $username, $email, $password);
+//$query = $mysqli_query->prepare($db, "INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
+//$query->bind_param("sss", $username, $email, $password);
 
 // set parameters and execute
 $username = "Hanu";
@@ -43,7 +45,7 @@ $query->execute();
 echo "New records created successfully";
 
 $query->close();
-$mysqli_query->close();
+$db->close();
 ?>
 
 
