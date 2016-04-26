@@ -2,11 +2,11 @@
 session_start();
 include("connection.php"); //Establishing connection with our database
 //session hijacking
-if($_SESSION['timeout']+30*60 < time())
-{
+//if($_SESSION['timeout']+30*60 < time())
+//{
 	//session timed out
-	session.destroy();
-	Header("Location:login.php");
+	//session.destroy();
+	//Header("Location:login.php");
 }
 //else{
 //$_SESSION['timeout'] = time();
