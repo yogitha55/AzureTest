@@ -18,7 +18,7 @@ if(isset($_POST["submit"]))
     //checks mime type of the file being uploaded
    $finfo = new finfo(FILEINFO_MIME_TYPE);
    $fileContents = file_get_contents($_FILES['some_name']['tmp_name']);
-   $mimeType = $finfo->buffer($fileContents);  
+   $mimeType = $finfo->buffer($fileContents);
 
     $sql="SELECT userID FROM users WHERE username='$name'";
     $result=mysqli_query($db,$sql);
@@ -39,7 +39,11 @@ if(isset($_POST["submit"]))
             $msg = "Sorry, there was an error uploading your file.";
         }
         //echo $name." ".$email." ".$password;
-
+        if(file_exists($target_file))
+        {
+            echo "Sorry, file already exists.";
+            $uploadOk = 0;
+        }
 
     }
     else{
@@ -59,11 +63,11 @@ if(isset($_POST["submit"]))
 
         //Check if file already exists
 
-        if(file_exists($target_file))
+       /* if(file_exists($target_file))
         {
             echo "Sorry, file already exists.";
             $uploadOk = 0;
-        }
+        }*/
 
         //Check file size
         if($_FILES["fileToUpload"]["Size"]>500000)
