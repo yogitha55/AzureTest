@@ -34,6 +34,12 @@ if(isset($_POST["submit"]))
             if ($query) {
                 $msg = "Thank You! The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded. click <a href='photos.php'>here</a> to go back";
             }
+            //echo $name." ".$email." ".$password;
+            if(file_exists($target_file))
+            {
+                echo "Sorry, file already exists.";
+                $uploadOk = 0;
+            }
 
         } else {
             $msg = "Sorry, there was an error uploading your file.";
@@ -44,12 +50,7 @@ if(isset($_POST["submit"]))
         $msg = "You need to login first";
     }
 
-    //echo $name." ".$email." ".$password;
-    if(file_exists($target_dir))
-    {
-        echo "Sorry, file already exists.";
-        $uploadOk = 0;
-    }
+
 
 
 }
