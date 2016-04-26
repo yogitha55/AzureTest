@@ -16,7 +16,7 @@ $db = new mysqli(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
 
 //$db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
 // Check connection
-if ($conn->connect_error) {
+/*if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
@@ -42,7 +42,7 @@ $email = "tata@example.com";
 $password = "super";
 $query->execute();
 
-echo "New records created successfully";
+echo "New records created successfully";*/
 
 $query->close();
 $db->close();
