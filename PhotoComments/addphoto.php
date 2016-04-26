@@ -45,7 +45,7 @@ if(isset($_POST["submit"]))
     }
 
     //echo $name." ".$email." ".$password;
-    if(file_exists($target_file))
+    if(file_exists($target_dir))
     {
         echo "Sorry, file already exists.";
         $uploadOk = 0;
