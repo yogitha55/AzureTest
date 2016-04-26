@@ -25,7 +25,7 @@ if(isset($_POST["submit"]))
     $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
 
     //Old code
-   /* if(mysqli_num_rows($result) == 1) {
+    if(mysqli_num_rows($result) == 1) {
         //$timestamp = time();
         //$target_file = $target_file.$timestamp;
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
@@ -43,9 +43,9 @@ if(isset($_POST["submit"]))
     }
     else{
         $msg = "You need to login first";
-    }*/
+    }
     //old code ends
-    if($uploadOk == 0)
+   /* if($uploadOk == 0)
     {
         echo "Sorry, your file was not uploaded.";
     }
@@ -64,7 +64,7 @@ if(isset($_POST["submit"]))
         else {
             echo "Sorry, there was an error uploading your file.";
         }
-    }
+    }*/
 
     // Check if image file is a original or fake
 
