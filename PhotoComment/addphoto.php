@@ -53,7 +53,13 @@ if(isset($_POST["submit"]))
     {
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file))
         {
-            echo "The file ".basename($_FILES["fileToUpload"]["name"]). " has been uploaded.";
+            $id = $row['userID'];
+            $addsql = "INSERT INTO photos (title, description, postDate, url, userID) VALUES ('$title','$desc',now(),'$target_file','$id')";
+            $query = mysqli_query($db, $addsql) or die(mysqli_error($db));
+           // echo "The file ".basename($_FILES["fileToUpload"]["name"]). " has been uploaded.";
+            if ($query) {
+                $msg = "Thank You! The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded. click <a href='photos.php'>here</a> to go back";
+            }
         }
         else {
             echo "Sorry, there was an error uploading your file.";
