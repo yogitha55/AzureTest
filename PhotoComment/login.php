@@ -1,5 +1,6 @@
 <?php
 session_start();
+include("connection.php"); //Establishing connection with our database
 //session hijacking
 if($_SESSION['timeout']+30*60 < time())
 {
@@ -8,10 +9,9 @@ if($_SESSION['timeout']+30*60 < time())
 	Header("Location:login.php");
 }
 //else{
-	//$_SESSION['timeout'] = time();
-	//session ok reset time
+//$_SESSION['timeout'] = time();
+//session ok reset time
 //}
-include("connection.php"); //Establishing connection with our database
 
 $error = ""; //Variable for storing our errors.
 if(isset($_POST["submit"]))
