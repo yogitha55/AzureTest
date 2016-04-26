@@ -15,11 +15,17 @@ if(isset($_POST["submit"]))
     $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
     $uploadOk = 1;
 
+    //checks mime type of the file being uploaded
+    $finfo = new finfo(FILEINFO_MIME_TYPE);
+    $fileContents = file_get_contents($_FILES['some_name']['tmp_name']);
+    $mimeType = $finfo->buffer($fileContents);
+
     $sql="SELECT userID FROM users WHERE username='$name'";
     $result=mysqli_query($db,$sql);
     $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
 
-    if(mysqli_num_rows($result) == 1) {
+    //Old code
+   /* if(mysqli_num_rows($result) == 1) {
         //$timestamp = time();
         //$target_file = $target_file.$timestamp;
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
@@ -37,6 +43,21 @@ if(isset($_POST["submit"]))
     }
     else{
         $msg = "You need to login first";
+    }*/
+    //old code ends
+    if($uploadOk == 0)
+    {
+        echo "Sorry, your file was not uploaded.";
+    }
+    else
+    {
+        if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file))
+        {
+            echo "The file ".basename($_FILES["fileToUpload"]["name"]). " has been uploaded.";
+        }
+        else {
+            echo "Sorry, there was an error uploading your file.";
+        }
     }
 
     // Check if image file is a original or fake
