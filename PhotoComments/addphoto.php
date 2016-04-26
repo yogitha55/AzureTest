@@ -16,9 +16,9 @@ if(isset($_POST["submit"]))
     $uploadOk = 1;
 
     //checks mime type of the file being uploaded
-   $finfo = new finfo(FILEINFO_MIME_TYPE);
+   /*$finfo = new finfo(FILEINFO_MIME_TYPE);
    $fileContents = file_get_contents($_FILES['some_name']['tmp_name']);
-   $mimeType = $finfo->buffer($fileContents);
+   $mimeType = $finfo->buffer($fileContents);*/
 
     $sql="SELECT userID FROM users WHERE username='$name'";
     $result=mysqli_query($db,$sql);
@@ -35,7 +35,7 @@ if(isset($_POST["submit"]))
                 $msg = "Thank You! The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded. click <a href='photos.php'>here</a> to go back";
             }
             //echo $name." ".$email." ".$password;
-            if(file_exists($target_file))
+            if(file_exists('http://yogitha.azurewebsites.net/PhotoComments/photos/' .$target_file))
             {
                 echo "Sorry, file already exists.";
                 $uploadOk = 0;
