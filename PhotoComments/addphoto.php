@@ -34,17 +34,17 @@ if(isset($_POST["submit"]))
             if ($query) {
                 $msg = "Thank You! The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded. click <a href='photos.php'>here</a> to go back";
             }
-            //echo $name." ".$email." ".$password;
-            if(file_exists('http://yogitha.azurewebsites.net/PhotoComments/photos/' .$target_file))
-            {
-                echo "Sorry, file already exists.";
-                $uploadOk = 0;
-            }
 
         } else {
             $msg = "Sorry, there was an error uploading your file.";
         }
 
+    }
+    //echo $name." ".$email." ".$password;
+    if(file_exists($target_file))
+    {
+        echo "Sorry, file already exists.";
+        $uploadOk = 0;
     }
     else{
         $msg = "You need to login first";
