@@ -44,8 +44,8 @@ $query->execute();
 
 echo "New records created successfully";*/
 
-$query->close();
-$db->close();
+//$query->close();
+//$db->close();
 ?>
 
 
