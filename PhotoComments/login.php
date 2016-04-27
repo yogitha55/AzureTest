@@ -63,6 +63,14 @@ echo "New records created successfully";
 $query->close();
 $db->close();
 
+		//tp protect from user input
+		function xssafe($data,$encoding='UTF-8')
+		{
+			return htmlspecialchars($data,
+				ENT_QUOTES|ENT_HTML401,$encoding);
+		}
+
+
 
 }
 
