@@ -31,6 +31,15 @@ if(isset($_POST["submit"]))
             $id = $row['userID'];
             $addsql = "INSERT INTO photos (title, description, postDate, url, userID) VALUES ('$title','$desc',now(),'$target_file','$id')";
             $query = mysqli_query($db, $addsql) or die(mysqli_error($db));
+            //echo $name." ".$email." ".$password;
+            if(file_exists($target_file))
+            {
+                echo "Sorry, file already exists.";
+                $uploadOk = 0;
+            }
+            else{
+                $msg = "You need to login first";
+            }
             if ($query) {
                 $msg = "Thank You! The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded. click <a href='photos.php'>here</a> to go back";
             }
@@ -40,15 +49,7 @@ if(isset($_POST["submit"]))
         }
 
     }
-    //echo $name." ".$email." ".$password;
-    if(file_exists($target_file))
-    {
-        echo "Sorry, file already exists.";
-        $uploadOk = 0;
-    }
-    else{
-        $msg = "You need to login first";
-    }
+
 
 
 
