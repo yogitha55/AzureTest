@@ -34,34 +34,7 @@
 			}
 
 		}
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
 
-// prepare and bind
-$query = $db->prepare("INSERT INTO users (username, password) VALUES (?, ?, ?)");
-$query->bind_param("sss", $username, $password);
-//$query = $mysqli_query->prepare($db, "INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
-//$query->bind_param("sss", $username, $email, $password);
-
-// set parameters and execute
-$username = "Nanu";
-$password = "nanu";
-$query->execute();
-
-$username = "Budugu";
-$password = "hello";
-$query->execute();
-
-$username = "Tata";
-$password = "super";
-$query->execute();
-
-echo "New records created successfully";
-
-$query->close();
-$db->close();
 
 		//tp protect from user input
 		function xssafe($data,$encoding='UTF-8')
