@@ -4,11 +4,11 @@
 	
 	$error = ""; //Variable for storing our errors.
 //tp protect from user input
-function xssafe($data,$encoding='UTF-8')
+/*function xssafe($data,$encoding='UTF-8')
 {
 	return htmlspecialchars($data,
 		ENT_QUOTES | ENT_HTML401,$encoding);
-}
+}*/
 
 if(isset($_POST["submit"]))
 	{
@@ -21,8 +21,6 @@ if(isset($_POST["submit"]))
 			$username=$_POST['username'];
 			$password=$_POST['password'];
 
-
-			
 			//Check username and password from database
 			$sql="SELECT userID FROM users WHERE username='$username' and password='$password'";
 			$result=mysqli_query($db,$sql);
@@ -33,11 +31,23 @@ if(isset($_POST["submit"]))
 			
 			if(mysqli_num_rows($result) == 1)
 			{
+
 				$_SESSION['username'] = $username; // Initializing Session
 				header("location: photos.php"); // Redirecting To Other Page
 			}else
 			{
 				$error = "Incorrect username or password.";
+			}
+			//creating procedure
+			if(!$mysqli->query("DROP PROCEDURE IF EXISTS p") ||
+				!$mysqli->query("CREATE PROCEDURE p(IN id_val INT) BEGIN INSERT INTO test(id) VALUES(id_val); END;"))
+			{
+				echo "Stored procedure creation failed: (" . $mysqli->errno . ")" . $mysqli->error;
+			}
+			//call the procedure with parameter
+			if(!$mysqli->query("CALL p(1)"))
+			{
+				echo "CALL failed: (" . $mysqli->errno . ") " . $mysqli->error;
 			}
 
 		}
