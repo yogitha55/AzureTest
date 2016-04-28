@@ -9,6 +9,7 @@
 	return htmlspecialchars($data,
 		ENT_QUOTES | ENT_HTML401,$encoding);
 }*/
+echo htmlspecialchars($string, ENT_QUOTES, 'UTF-8');
 
 if(isset($_POST["submit"]))
 	{
