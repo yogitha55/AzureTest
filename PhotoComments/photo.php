@@ -45,14 +45,7 @@ function _e($string)
 
                 }
                 echo "<a href='addcommentform.php?id=".$photoID."'> Add Comment</a><br>";
-                //echo htmlspecialchars($string, ENT_QUOTES, 'UTF-8');
-                //tp protect from user input
-                function xssafe($data,$encoding='UTF-8')
-                {
-                    return htmlspecialchars($data,
-                        ENT_QUOTES | ENT_HTML401,$encoding);
-                }
-
+                
                 if($adminuser){
                     echo "<div class='error'><a href='removephoto.php?id=".$photoID."'> Delete Photo</a></div>";
                 }
