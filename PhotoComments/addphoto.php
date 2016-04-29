@@ -5,8 +5,11 @@ include("connection.php"); //Establishing connection with our database
 $msg = ""; //Variable for storing our errors.
 if(isset($_POST["submit"]))
 {
+    //Preventing from cross site scripting
+    //Santize the data before it pass through in Title
     $title = htmlentities($_POST["title"]);
-    $desc = $_POST["desc"];
+    //Santize the data before it pass through in Desc
+    $desc = htmlentities($_POST["desc"]);
     $url = "test";
     $name = $_SESSION["username"];
 
