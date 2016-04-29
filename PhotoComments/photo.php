@@ -11,11 +11,11 @@
 return htmlspecialchars($string,ENT_QUOTES,'UTF-8');
 
 	}*/
-function xssafe($data,$encoding='UTF-8')
+function escape($string)
 {
-	return htmlspecialchars($data,
-		ENT_QUOTES | ENT_HTML401,$encoding);
+    return htmlspecialchars($string,ENT_QUOTES,'UTF-8');
 }
+
 
 ?>
 <!doctype html>
