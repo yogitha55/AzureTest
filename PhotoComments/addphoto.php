@@ -10,6 +10,9 @@ if(isset($_POST["submit"]))
     $url = "test";
     $name = $_SESSION["username"];
 
+    $title = stripslashes($title);
+    $desc = stripslashes($desc);
+
     $target_dir = "uploads/";
     $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
     $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
@@ -29,17 +32,9 @@ if(isset($_POST["submit"]))
         //$target_file = $target_file.$timestamp;
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
             $id = $row['userID'];
+
             $addsql = "INSERT INTO photos (title, description, postDate, url, userID) VALUES ('$title','$desc',now(),'$target_file','$id')";
             $query = mysqli_query($db, $addsql) or die(mysqli_error($db));
-            //echo $name." ".$email." ".$password;
-            if(file_exists($target_file))
-            {
-                echo "Sorry, file already exists.";
-                $uploadOk = 0;
-            }
-            else{
-                $msg = "You need to login first";
-            }
             if ($query) {
                 $msg = "Thank You! The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded. click <a href='photos.php'>here</a> to go back";
             }
@@ -49,7 +44,15 @@ if(isset($_POST["submit"]))
         }
 
     }
-
+    //echo $name." ".$email." ".$password;
+    if(file_exists($target_file))
+    {
+        echo "Sorry, file already exists.";
+        $uploadOk = 0;
+    }
+    else{
+        $msg = "You need to login first";
+    }
 
 
 
