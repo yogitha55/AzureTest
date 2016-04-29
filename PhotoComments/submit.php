@@ -6,6 +6,15 @@ if(isset($_POST["submit"]))
     $email = $_POST["email"];
     $password = $_POST["password"];
 
+    //my sql injection
+    $username = stripslashes($username);
+    $password = stripslashes($password);
+    $username = stripslashes($email);
+    $usernmae = mysqli_real_escape_string($db, $username);
+    $email = mysqli_real_escape_string($db, $email);
+    $password = mysqli_real_escape_string($db, $password);
+    $password = md5($password);
+
 
 
     $sql="SELECT email FROM users WHERE email='$email'";
