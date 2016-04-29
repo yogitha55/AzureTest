@@ -23,12 +23,12 @@ if(isset($_POST["submit"]))
 			$username=$_POST['username'];
 			$password=$_POST['password'];
 
-			/*//my sql injection
+			//my sql injection
 			$username = stripslashes($username);
 			$password = stripslashes($password);
 			$usernmae = mysqli_real_escape_string($db, $username);
 			$password = mysqli_real_escape_string($db, $password);
-			$password = md5($password);*/
+			$password = md5($password);
 
 			//Check username and password from database
 			$sql="SELECT userID FROM users WHERE username='$username' and password='$password'";
