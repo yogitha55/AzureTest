@@ -1,11 +1,17 @@
 <?php
 	include("check.php");
     include("connection.php");
-function _e($string)
+/*function _e($string)
 {
     echo htmlspecialchars($string, ENT_QUOTES, 'UTF-8');
 
-}
+}*/
+function validate($string){
+
+return htmlspecialchars($string,ENT_QUOTES,'UTF-8');
+
+	}
+
 ?>
 <!doctype html>
 <html>
@@ -45,7 +51,7 @@ function _e($string)
 
                 }
                 echo "<a href='addcommentform.php?id=".$photoID."'> Add Comment</a><br>";
-                
+
                 if($adminuser){
                     echo "<div class='error'><a href='removephoto.php?id=".$photoID."'> Delete Photo</a></div>";
                 }
