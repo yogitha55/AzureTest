@@ -6,9 +6,15 @@ $msg = ""; //Variable for storing our errors.
 if(isset($_POST["submit"]))
 {
 
-    $desc = $_POST["desc"];
-    $photoID = $_POST["photoID"];
-    $name = $_SESSION["username"];
+    //$desc = $_POST["desc"];
+    //$photoID = $_POST["photoID"];
+    //$name = $_SESSION["username"];
+
+    //Preventing from cross site scripting
+    //Santize the data before it pass through in Title
+    $desc = htmlentities($_POST["desc"]);
+    $photoID = htmlentities($_POST["photoID"]);
+    $username = htmlentities($_POST["username"]);
 
     $sql="SELECT userID FROM users WHERE username='$name'";
     $result=mysqli_query($db,$sql);
