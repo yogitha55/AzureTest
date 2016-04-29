@@ -12,6 +12,8 @@ if(isset($_POST["submit"]))
 
     $title = stripslashes($title);
     $desc = stripslashes($desc);
+    $title = mysqli_real_escape_string($db, $title);
+    $desc = mysqli_real_escape_string($db, $desc);
 
     $target_dir = "uploads/";
     $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
