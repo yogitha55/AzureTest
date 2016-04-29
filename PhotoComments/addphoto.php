@@ -5,15 +5,22 @@ include("connection.php"); //Establishing connection with our database
 $msg = ""; //Variable for storing our errors.
 if(isset($_POST["submit"]))
 {
-    $title = $_POST["title"];
+   /* $title = $_POST["title"];
     $desc = $_POST["desc"];
     $url = "test";
-    $name = $_SESSION["username"];
+    $name = $_SESSION["username"];*/
 
-    $title = stripslashes($title);
-    $desc = stripslashes($desc);
+    //sql injection code
+
+    $title = stripslashes(trim($_POST["$title"]));
     $title = mysqli_real_escape_string($db, $title);
+    $title = htmlspecialchars($title);
+
+
+    $desc = stripslashes(trim($_POST["$desc"]));
     $desc = mysqli_real_escape_string($db, $desc);
+    $desc = htmlspecialchars($desc);
+
 
     $target_dir = "uploads/";
     $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
