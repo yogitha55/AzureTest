@@ -11,6 +11,7 @@
 }*/
 //echo htmlspecialchars($string, ENT_QUOTES, 'UTF-8');
 
+
 if(isset($_POST["submit"]))
 	{
 		if(empty($_POST["username"]) || empty($_POST["password"]))
@@ -22,12 +23,12 @@ if(isset($_POST["submit"]))
 			$username=$_POST['username'];
 			$password=$_POST['password'];
 
-			/*//my sql injection
+			//my sql injection
 			$username = stripslashes($username);
 			$password = stripslashes($password);
 			$usernmae = mysqli_real_escape_string($db, $username);
 			$password = mysqli_real_escape_string($db, $password);
-			$password = md5($password);*/
+			$password = md5($password);
 
 			//Check username and password from database
 			$sql="SELECT userID FROM users WHERE username='$username' and password='$password'";
@@ -46,7 +47,7 @@ if(isset($_POST["submit"]))
 			{
 				$error = "Incorrect username or password.";
 			}
-			//creating procedure
+			/*//creating procedure
 			if(!$mysqli->query("DROP PROCEDURE IF EXISTS p") ||
 				!$mysqli->query("CREATE PROCEDURE p(IN id_val INT) BEGIN INSERT INTO test(id) VALUES(id_val); END;"))
 			{
@@ -56,11 +57,15 @@ if(isset($_POST["submit"]))
 			if(!$mysqli->query("CALL p(1)"))
 			{
 				echo "CALL failed: (" . $mysqli->errno . ") " . $mysqli->error;
-			}
+			}*/
 
 		}
 
+		/*function validate($string){
 
+			return htmlspecialchars($string,ENT_QUOTES,'UTF-8');
+
+		}*/
 
 
 
