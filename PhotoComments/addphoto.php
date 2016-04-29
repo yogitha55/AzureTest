@@ -5,7 +5,7 @@ include("connection.php"); //Establishing connection with our database
 $msg = ""; //Variable for storing our errors.
 if(isset($_POST["submit"]))
 {
-    $title = $_POST["title"];
+    $title = htmlentities($_POST["title"]);
     $desc = $_POST["desc"];
     $url = "test";
     $name = $_SESSION["username"];
