@@ -1,6 +1,11 @@
 <?php
 	include("check.php");
     include("connection.php");
+function _e($string)
+{
+    echo htmlspecialchars($string, ENT_QUOTES, 'UTF-8');
+
+}
 ?>
 <!doctype html>
 <html>
