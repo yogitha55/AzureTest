@@ -41,7 +41,14 @@ if(isset($_POST["submit"]))
         //$target_file = $target_file.$timestamp;
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
             $id = $row['userID'];
-
+            if(file_exists($target_file))
+            {
+                echo "Sorry, file already exists.";
+                $uploadOk = 0;
+            }
+            else{
+                $msg = "You need to login first";
+            }
             $addsql = "INSERT INTO photos (title, description, postDate, url, userID) VALUES ('$title','$desc',now(),'$target_file','$id')";
             $query = mysqli_query($db, $addsql) or die(mysqli_error($db));
             if ($query) {
@@ -54,14 +61,7 @@ if(isset($_POST["submit"]))
 
     }
     //echo $name." ".$email." ".$password;
-    if(file_exists($target_file))
-    {
-        echo "Sorry, file already exists.";
-        $uploadOk = 1;
-    }
-    else{
-        $msg = "You need to login first";
-    }
+
 
 
 
