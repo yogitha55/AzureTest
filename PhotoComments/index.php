@@ -13,8 +13,6 @@ if($_SESSION['timeout'] + 30*60 < time()) {
 
 
 ?>
-
-<a href="other.php">other page</a>
 <!doctype html>
 <html>
 <head>
