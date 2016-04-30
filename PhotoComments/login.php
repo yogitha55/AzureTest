@@ -5,12 +5,12 @@ ini_set('session.cookie_httponly', true);
 	
 	$error = ""; //Variable for storing our errors.
 
-/*if($_SESSION['timeout'] + 30*60 < time()) {
+if($_SESSION['timeout'] + 30*60 < time()) {
 	//session timed out
 	session_destroy();
 	Header("Location:login.php");
 }
-*/
+
 
 
 if(isset($_POST["submit"]))
@@ -25,9 +25,9 @@ if(isset($_POST["submit"]))
 			$password=$_POST['password'];
 
 			//session hijacking
-			$_SESSION["username"] = $_POST["username"];
-			$_SESSION['last_login_timestamp'] = time();
-			header("location:index.php");
+		//	$_SESSION["username"] = $_POST["username"];
+		//	$_SESSION['last_login_timestamp'] = time();
+		//	header("location:index.php");
 
 			//my sql injection
 			$username = stripslashes($username);
