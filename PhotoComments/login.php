@@ -8,7 +8,7 @@ ini_set('session.cookie_httponly', true);
 if($_SESSION['timeout'] + 30*60 < time()) {
 	//session timed out
 	session_destroy();
-	Header("Location:login.php");
+	Header("Location:photo.php");
 }
 
 
