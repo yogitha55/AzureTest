@@ -5,11 +5,11 @@
 	{
 		header('Location: photos.php');
 	}
-/*if($_SESSION['timeout'] + 30*60 < time()) {
+if($_SESSION['timeout'] + 30*60 < time()) {
     //session timed out
     session_destroy();
-    Header("Location:.php");
-}*/
+    Header("Location:logout.php");
+}
 
 
 ?>
