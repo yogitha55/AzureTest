@@ -1,15 +1,19 @@
 <?php
+ini_set('session.cookie_httponly', true);
 	session_start();
 	include("connection.php"); //Establishing connection with our database
 	
 	$error = ""; //Variable for storing our errors.
-//tp protect from user input
-/*function xssafe($data,$encoding='UTF-8')
+
+if(isset($_SESSION['last_ip']) === false)
 {
-	return htmlspecialchars($data,
-		ENT_QUOTES | ENT_HTML401,$encoding);
-}*/
-//echo htmlspecialchars($string, ENT_QUOTES, 'UTF-8');
+	$_SESSION['last_ip'] = $_SERVER['REMOTE_ADDR'];
+}
+if($_SESSION['last_ip'] !== $_SERVER['REMOTE_ADDR'])
+{
+	session_unset();
+	session_destroy();
+}
 
 
 if(isset($_POST["submit"]))

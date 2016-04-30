@@ -6,6 +6,7 @@
 		header('Location: photos.php');
 	}
 
+
 ?>
 
 <!doctype html>
