@@ -8,7 +8,7 @@
 if($_SESSION['timeout'] + 30*60 < time()) {
     //session timed out
     session_destroy();
-    Header("Location:logout.php");
+    Header("Location:photos.php");
 }
 
 
