@@ -1,20 +1,20 @@
 <?php
-ini_set('session.cookie_httponly', true);
+//ini_set('session.cookie_httponly', true);
 	session_start();
 	include("connection.php"); //Establishing connection with our database
 	
 	$error = ""; //Variable for storing our errors.
 
-/*if($_SESSION['timeout'] + 60 < time()) {
+if($_SESSION['timeout'] + 60 < time()) {
 	//session timed out
 	session_destroy();
 	Header("Location:login.php");
 }
 else{
 	$_SESSION['timeout'] = time();
-}*/
+}
 
-if(isset($_SESSION['last_ip']) === false)
+/*if(isset($_SESSION['last_ip']) === false)
 {
 	$_SESSION['last_ip'] = $_SERVER['REMOTE_ADDR'];
 }
@@ -22,7 +22,7 @@ if($_SESSION['last_ip'] !== $_SERVER['REMOTE_ADDR'])
 {
 	session_unset();
 	session_destroy();
-}
+}*/
 
 
 if(isset($_POST["submit"]))
