@@ -8,7 +8,7 @@
 if($_SESSION['timeout'] + 60 < time()) {
 	//session timed out
 	session_destroy();
-	Header("Location:login.php");
+	Header("Location:index.php");
 }
 else{
 	$_SESSION['timeout'] = time();
