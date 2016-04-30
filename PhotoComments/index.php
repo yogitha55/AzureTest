@@ -10,6 +10,14 @@
     session_destroy();
     Header("Location:login.php");
 }*/
+if($_SESSION['timeout'] + 60 < time()) {
+    //session timed out
+    session_destroy();
+    Header("Location:login.php");
+}
+else{
+    $_SESSION['timeout'] = time();
+}
 
 
 ?>

@@ -5,11 +5,14 @@ ini_set('session.cookie_httponly', true);
 	
 	$error = ""; //Variable for storing our errors.
 
-if($_SESSION['timeout'] + 30*60 < time()) {
+/*if($_SESSION['timeout'] + 60 < time()) {
 	//session timed out
 	session_destroy();
 	Header("Location:login.php");
 }
+else{
+	$_SESSION['timeout'] = time();
+}*/
 
 
 
