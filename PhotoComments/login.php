@@ -5,15 +5,12 @@ ini_set('session.cookie_httponly', true);
 	
 	$error = ""; //Variable for storing our errors.
 
-if(isset($_SESSION['last_ip']) === false)
-{
-	$_SESSION['last_ip'] = $_SERVER['REMOTE_ADDR'];
-}
-if($_SESSION['last_ip'] !== $_SERVER['REMOTE_ADDR'])
-{
-	session_unset();
+/*if($_SESSION['timeout'] + 30*60 < time()) {
+	//session timed out
 	session_destroy();
+	Header("Location:login.php");
 }
+*/
 
 
 if(isset($_POST["submit"]))
@@ -26,6 +23,11 @@ if(isset($_POST["submit"]))
 			// Define $username and $password
 			$username=$_POST['username'];
 			$password=$_POST['password'];
+
+			//session hijacking
+			$_SESSION["username"] = $_POST["username"];
+			$_SESSION['last_login_timestamp'] = time();
+			header("location:index.php");
 
 			//my sql injection
 			$username = stripslashes($username);

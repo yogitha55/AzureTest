@@ -1,14 +1,20 @@
 <?php
 	include('login.php'); // Include Login Script
 
-	if ((isset($_SESSION['username']) != '')) 
+	if ((isset($_SESSION['username']) != ''))
 	{
 		header('Location: photos.php');
 	}
+if($_SESSION['timeout'] + 30*60 < time()) {
+    //session timed out
+    session_destroy();
+    Header("Location:login.php");
+}
 
 
 ?>
 
+<a href="other.php">other page</a>
 <!doctype html>
 <html>
 <head>
