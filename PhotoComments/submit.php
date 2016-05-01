@@ -13,7 +13,7 @@ if(isset($_POST["submit"]))
     $usernmae = mysqli_real_escape_string($db, $username);
     $email = mysqli_real_escape_string($db, $email);
     $password = mysqli_real_escape_string($db, $password);
-    $password = md5($password);
+    //$password = md5($password);
 
 
 
