@@ -1,15 +1,16 @@
 <?php
-
+//it specifies whether cookies should only be sent over secure connections
 ini_set('session.cookie_httponly', true);
 session_start();
+// session hijacking starts after session starts
 if(isset($_SESSION['last_ip']) === false)
 {
     $_SESSION['last_ip'] = $_SERVER['REMOTE_ADDR'];
 }
 if($_SESSION['last_ip'] !== $_SERVER['REMOTE_ADDR'])
 {
-    session_unset();
-    session_destroy();
+    session_unset(); //Free all session variables
+    session_destroy();//destroy all data registred to a session
 }
 
 include("connection.php"); //Establishing connection with our database
@@ -23,7 +24,7 @@ if(isset($_POST["submit"]))
 
     $title = htmlentities($_POST["title"]);
 
-    //Santize the data before it pass through in Desc
+    //Santize the data before it pass through in Desc using XSS
 
     $desc = htmlentities($_POST["desc"]);
     $url = "test";
