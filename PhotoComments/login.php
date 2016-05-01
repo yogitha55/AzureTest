@@ -5,14 +5,14 @@
 	
 	$error = ""; //Variable for storing our errors.
 
-if($_SESSION['timeout'] + 60 < time()) {
+/*if($_SESSION['timeout'] + 60 < time()) {
 	//session timed out
 	session_destroy();
-	Header("Location:index.php");
+	Header("Location:login.php");
 }
 else{
 	$_SESSION['timeout'] = time();
-}
+}*/
 
 /*if(isset($_SESSION['last_ip']) === false)
 {
@@ -41,7 +41,7 @@ if(isset($_POST["submit"]))
 		//	$_SESSION['last_login_timestamp'] = time();
 		//	header("location:index.php");
 
-			//my sql injection
+			//my sql injection prepared statements applied on login screen
 			$username = stripslashes($username);
 			$password = stripslashes($password);
 			$usernmae = mysqli_real_escape_string($db, $username);
@@ -65,26 +65,10 @@ if(isset($_POST["submit"]))
 			{
 				$error = "Incorrect username or password.";
 			}
-			/*//creating procedure
-			if(!$mysqli->query("DROP PROCEDURE IF EXISTS p") ||
-				!$mysqli->query("CREATE PROCEDURE p(IN id_val INT) BEGIN INSERT INTO test(id) VALUES(id_val); END;"))
-			{
-				echo "Stored procedure creation failed: (" . $mysqli->errno . ")" . $mysqli->error;
-			}
-			//call the procedure with parameter
-			if(!$mysqli->query("CALL p(1)"))
-			{
-				echo "CALL failed: (" . $mysqli->errno . ") " . $mysqli->error;
-			}*/
+
+
 
 		}
-
-		//function validate($string){
-
-		//	return htmlspecialchars($string,ENT_QUOTES,'UTF-8');
-
-//		}
-
 
 
 }
