@@ -36,7 +36,7 @@ if(isset($_POST["submit"]))
     //checks mime type of the file being uploaded
     $finfo = new finfo(FILEINFO_MIME_TYPE);
     $fileContents = file_get_contents($_FILES['some_name']['tmp_name']);
-    $mimeType = $finfo->buffer($fileContents);  
+    $mimeType = $finfo->buffer($fileContents);
 
 
 
@@ -46,10 +46,10 @@ if(isset($_POST["submit"]))
 
     //Check if file already exists
 
-    if(file_exists($target_file))
-    {
+    if(file_exists($target_file)) {
         echo "Sorry, file already exists.";
-        $uploadOk = 1;
+        $uploadOk = 0;
+    }
 
     // Check if image file is a original or fake
 
