@@ -47,6 +47,10 @@ if(isset($_POST["submit"]))
         $uploadOk = 1;
     }
 
+    else {
+        $msg = "Sorry, there was an error uploading your file.";
+    }
+
     //limit file size
     if ($_FILES["fileToUpload"]["size"] > 500000) {
         echo "Sorry, your file is too large.";
