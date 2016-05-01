@@ -33,6 +33,11 @@ if(isset($_POST["submit"]))
     $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
     $uploadOk = 1;
 
+    //checks mime type of the file being uploaded
+    $finfo = new finfo(FILEINFO_MIME_TYPE);
+    $fileContents = file_get_contents($_FILES['some_name']['tmp_name']);
+    $mimeType = $finfo->buffer($fileContents);  
+
 
 
     $sql="SELECT userID FROM users WHERE username='$name'";
@@ -45,11 +50,19 @@ if(isset($_POST["submit"]))
     {
         echo "Sorry, file already exists.";
         $uploadOk = 1;
-    }
 
-    else {
-        $msg = "Sorry, there was an error uploading your file.";
-    }
+    // Check if image file is a original or fake
+
+        $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+        if($check !== false) {
+            echo "File is an image -" . $check["mime"] . ".";
+            $uploadOk = 1;
+        }
+        else{
+            echo "File is not an image.";
+            $uploadOk = 0;
+        }
+
 
     //limit file size
     if ($_FILES["fileToUpload"]["size"] > 500000) {
@@ -73,6 +86,7 @@ if(isset($_POST["submit"]))
 
             $addsql = "INSERT INTO photos (title, description, postDate, url, userID) VALUES ('$title','$desc',now(),'$target_file','$id')";
             $query = mysqli_query($db, $addsql) or die(mysqli_error($db));
+
 
             if ($query) {
                 $msg = "Thank You! The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded. click <a href='photos.php'>here</a> to go back";
