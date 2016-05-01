@@ -44,7 +44,7 @@ if(isset($_POST["submit"]))
     if(file_exists($target_file))
     {
         echo "Sorry, file already exists.";
-        $uploadOk = 0;
+        $uploadOk = 1;
     }
 
     //limit file size
