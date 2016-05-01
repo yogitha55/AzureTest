@@ -6,7 +6,7 @@ $msg = ""; //Variable for storing our errors.
 if(isset($_POST["submit"]))
 {
 
-    //$desc = $_POST["desc"];
+
     //Preventing from cross site scripting
     //Santize the data before it pass through in Description
     $desc = htmlentities($_POST["desc"]);
