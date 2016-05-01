@@ -20,12 +20,14 @@ if(isset($_POST["submit"]))
 {
     //Preventing from cross site scripting
     //Santize the data before it pass through in Title
+
     $title = htmlentities($_POST["title"]);
+
     //Santize the data before it pass through in Desc
+
     $desc = htmlentities($_POST["desc"]);
     $url = "test";
     $name = $_SESSION["username"];
-
 
 
     $target_dir = "uploads/";
@@ -34,21 +36,20 @@ if(isset($_POST["submit"]))
     $uploadOk = 1;
 
 
-
     $sql="SELECT userID FROM users WHERE username='$name'";
     $result=mysqli_query($db,$sql);
     $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
 
     //Check if file already exists
 
-   /* if(file_exists($target_file)) {
+   if(file_exists($target_file)) {
         echo "Sorry, file already exists.";
         $uploadOk = 0;
-    }*/
+    }
 
     // Check if image file is a original or fake
 
-       /* $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+        $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
         if($check !== false) {
             echo "File is an image -" . $check["mime"] . ".";
             $uploadOk = 1;
@@ -56,11 +57,11 @@ if(isset($_POST["submit"]))
         else{
             echo "File is not an image.";
             $uploadOk = 0;
-        }*/
+        }
 
 
     //limit file size
-   /* if ($_FILES["fileToUpload"]["size"] > 500000) {
+    if ($_FILES["fileToUpload"]["size"] > 500000) {
         echo "Sorry, your file is too large.";
         $uploadOk = 0;
     }
@@ -71,7 +72,7 @@ if(isset($_POST["submit"]))
             echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
             $uploadOk = 0;
         }
-        else */
+
 
     if(mysqli_num_rows($result) == 1) {
         //$timestamp = time();
