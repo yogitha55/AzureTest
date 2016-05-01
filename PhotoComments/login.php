@@ -1,18 +1,10 @@
 <?php
-//ini_set('session.cookie_httponly', true);
+https://www.youtube.com/watch?v=puFjrWw4tF8
 	session_start();
 	include("connection.php"); //Establishing connection with our database
 	
 	$error = ""; //Variable for storing our errors.
-
-/*if($_SESSION['timeout'] + 60 < time()) {
-	//session timed out
-	session_destroy();
-	Header("Location:login.php");
-}
-else{
-	$_SESSION['timeout'] = time();
-}*/
+// Session hijacking
 
 /*if(isset($_SESSION['last_ip']) === false)
 {
@@ -35,11 +27,6 @@ if(isset($_POST["submit"]))
 			// Define $username and $password
 			$username=$_POST['username'];
 			$password=$_POST['password'];
-
-			//session hijacking
-		//	$_SESSION["username"] = $_POST["username"];
-		//	$_SESSION['last_login_timestamp'] = time();
-		//	header("location:index.php");
 
 			//my sql injection prepared statements applied on login screen
 			$username = stripslashes($username);
