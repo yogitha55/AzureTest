@@ -6,14 +6,14 @@ if(isset($_POST["submit"]))
     $email = $_POST["email"];
     $password = $_POST["password"];
 
-    ////use inbuilt functions strip slashes and mysql_real_escape to prevent sql injection attacks on login screen
-   /* $username = stripslashes($username);
+    //use inbuilt functions strip slashes and mysql_real_escape to prevent sql injection attacks on login screen
+    $username = stripslashes($username);
     $password = stripslashes($password);
     $username = stripslashes($email);
     $usernmae = mysqli_real_escape_string($db, $username);
     $email = mysqli_real_escape_string($db, $email);
     $password = mysqli_real_escape_string($db, $password);
-    $password = md5($password); */
+    $password = md5($password);
 
 
 
