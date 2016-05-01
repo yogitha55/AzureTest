@@ -60,7 +60,7 @@ if(isset($_POST["submit"]))
 
 
     //limit file size
-    /*if ($_FILES["fileToUpload"]["size"] > 500000) {
+   /* if ($_FILES["fileToUpload"]["size"] > 500000) {
         echo "Sorry, your file is too large.";
         $uploadOk = 0;
     }
@@ -70,8 +70,8 @@ if(isset($_POST["submit"]))
             && $imageFileType != "gif" ) {
             echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
             $uploadOk = 0;
-        } */
-        else
+        }
+        else */
 
     if(mysqli_num_rows($result) == 1) {
         //$timestamp = time();
