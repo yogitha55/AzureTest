@@ -31,7 +31,7 @@ if(isset($_POST["submit"]))
 			//use inbuilt functions stripslashes and mysql_real_escape to prevent sql injection attacks on login screen
 			$username = stripslashes($username);
 			$password = stripslashes($password);
-			$usernmae = mysqli_real_escape_string($db, $username);
+			$username = mysqli_real_escape_string($db, $username);
 			$password = mysqli_real_escape_string($db, $password);
 			$password = md5($password);
 
