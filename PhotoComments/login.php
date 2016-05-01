@@ -16,7 +16,6 @@ if($_SESSION['last_ip'] !== $_SERVER['REMOTE_ADDR'])
 	session_destroy();
 }
 
-
 if(isset($_POST["submit"]))
 	{
 		if(empty($_POST["username"]) || empty($_POST["password"]))
@@ -33,7 +32,7 @@ if(isset($_POST["submit"]))
 			$password = stripslashes($password);
 			$username = mysqli_real_escape_string($db, $username);
 			$password = mysqli_real_escape_string($db, $password);
-			$password = md5($password);
+			$password = md5($password); //MD 5 converts plain text to hash code
 
 			//Check username and password from database
 			$sql="SELECT userID FROM users WHERE username='$username' and password='$password'";
