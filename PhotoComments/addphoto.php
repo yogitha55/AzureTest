@@ -33,12 +33,7 @@ if(isset($_POST["submit"]))
     $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
     $uploadOk = 1;
 
-    //checks mime type of the file being uploaded
-    $finfo = new finfo(FILEINFO_MIME_TYPE);
-    $fileContents = file_get_contents($_FILES['some_name']['tmp_name']);
-    $mimeType = $finfo->buffer($fileContents);
-
-
+    
 
     $sql="SELECT userID FROM users WHERE username='$name'";
     $result=mysqli_query($db,$sql);
